@@ -139,7 +139,7 @@ class Menu extends React.Component {
                         <ul>
                             <li><Link to="/home" className="jump">资源管理</Link></li>
                             <li><Link to="/dimension" className="jump">维度管理</Link></li>
-                            <li><Link to="/home" className="jump">邮件配</Link></li>
+                            <li><Link to="/home" className="jump">邮件配置</Link></li>
                             <li><Link to="/home" className="jump">设备许可</Link></li>
                             <li><Link to="/home" className="jump">数据存储</Link></li>
                         </ul>
