@@ -1,0 +1,99 @@
+/*
+* @Author:  CoronetLiu
+* @Date:    2018-04-03 17:24:54
+* @Last Modified by:    CoronetLiu
+* @Last Modified time:  2018-04-26 17:22:29
+* @Email:   liu86931@163.com
+*/
+
+#user{
+    min-height:100%;
+    background:url('../../../resource/images/user.png') 0px 0px repeat-y;
+    background-size:100%;
+    .user-title{
+        width:950px;
+        margin:0 auto;
+        display:flex;
+        justify-content:space-between;
+        padding-top:20px;
+    }
+    .user-title p{
+        height:30px;
+        padding:0 10px;
+        line-height:30px;
+        font-size:16px;
+        border-radius:15px;
+        background:#3afdfd;
+    }
+    .adduser,.deleteuser{
+        width:80px;
+    }
+    #user-container{
+        width:950px;
+        margin:0 auto;
+        padding-bottom:20px;
+    }
+
+
+    .layui-laypage{
+        display:flex;
+        justify-content: center;
+    }
+    .layui-table-cell{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .layui-table-page{
+        background:#fff;
+    }
+    .confirm-monitor{
+        display:block;
+    }
+
+}//user
+
+    .user-bef{
+        display:inline-block;
+        width:100px;
+        text-align:right;
+    }
+    .modify-user,.modify-password,.modify-protect-password,.modify-name,.modify-tel,.modify-email,.modify-if-login{
+        margin-left:5px;
+        height:25px;
+        text-align:center;
+        border:none;
+        border:1px solid #ccc;
+        width:230px;
+    }
+    .arrow-if-login{
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid dashed dashed;
+        border-color: #000 transparent transparent;
+        overflow: hidden;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 310px;
+        border-width: 10px;
+        border-top-color: rgba(0,0,0,.7);
+    }
+    .if-login-list{
+        display:none;
+        position:absolute;
+        z-index:10;
+        top:40px;
+        left:109px;
+        width:232px;
+        background:#fff;
+        li{
+            height:25px;
+            border:1px dashed #ccc;
+            border-top:none;
+            line-height:25px;
+            text-align:center;
+            color:#000;
+        }
+    }

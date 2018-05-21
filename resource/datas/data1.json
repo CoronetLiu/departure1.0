@@ -1,0 +1,22 @@
+[
+{"manageIP":"127.127.127.127","type":"LENOVO 3650 M4","name":"192.168.182.212","warnstate":"正常","rate":10,"state":1,"command":"on","desk":"off","web":"on","fast":["on","off","restart","SSH"]},
+{"manageIP":"127.0.0.2","type":"LENOVO 3650 M4","name":"N-1-2","warnstate":"告警","rate":10,"state":1,"command":"off","desk":"on","web":"off","fast":["on","off","restart"]},
+{"manageIP":"127.0.0.3","type":"LENOVO 3650 M4","name":"N-1-3","warnstate":"正常","rate":10,"state":0,"command":"off","desk":"on","web":"on","fast":["SSH"]},
+{"manageIP":"127.0.0.4","type":"LENOVO 3650 M4","name":"N-1-4","warnstate":"正常","rate":10,"state":1,"command":"on","desk":"off","web":"on","fast":["on","off","SSH"]},
+{"manageIP":"127.0.0.5","type":"LENOVO 3650 M4","name":"N-1-5","warnstate":"告警","rate":10,"state":1,"command":"on","desk":"on","web":"on","fast":["on","off","restart"]},
+{"manageIP":"127.0.0.6","type":"LENOVO 3650 M5","name":"N-1-6","warnstate":"正常","rate":10,"state":0,"command":"on","desk":"off","web":"on","fast":["on","off","restart","SSH"]},
+{"manageIP":"127.0.0.7","type":"LENOVO 3650 M5","name":"N-1-7","warnstate":"正常","rate":10,"state":1,"command":"off","desk":"on","web":"on","fast":["on","off","restart","SSH"]},
+{"manageIP":"127.0.0.8","type":"LENOVO 3650 M5","name":"N-1-8","warnstate":"告警","rate":10,"state":1,"command":"on","desk":"on","web":"on","fast":["on","off","restart"]},
+{"manageIP":"127.0.0.9","type":"LENOVO 3650 M5","name":"N-1-9","warnstate":"正常","rate":10,"state":1,"command":"off","desk":"off","web":"off","fast":["on","off","restart","SSH"]},
+{"manageIP":"127.0.0.10","type":"LENOVO 3650 M5","name":"N-1-10","warnstate":"正常","rate":10,"state":1,"command":"off","desk":"on","web":"off","fast":["SSH"]},
+{"manageIP":"127.127.127.127","type":"LENOVO 3650 M4","name":"192.168.182.212","warnstate":"正常","rate":10,"state":1,"command":"on","desk":"off","web":"on","fast":["on","off","restart","SSH"]},
+{"manageIP":"127.0.0.12","type":"LENOVO 3650 M4","name":"N-1-12","warnstate":"告警","rate":10,"state":1,"command":"off","desk":"on","web":"off","fast":["on","off","restart"]},
+{"manageIP":"127.0.0.13","type":"LENOVO 3650 M4","name":"N-1-13","warnstate":"正常","rate":10,"state":0,"command":"off","desk":"on","web":"on","fast":["SSH"]},
+{"manageIP":"127.0.0.14","type":"LENOVO 3650 M4","name":"N-1-14","warnstate":"正常","rate":10,"state":1,"command":"on","desk":"off","web":"on","fast":["on","off","SSH"]},
+{"manageIP":"127.0.0.15","type":"LENOVO 3650 M4","name":"N-1-15","warnstate":"告警","rate":10,"state":1,"command":"on","desk":"on","web":"on","fast":["on","off","restart"]},
+{"manageIP":"127.0.0.16","type":"LENOVO 3650 M5","name":"N-1-16","warnstate":"正常","rate":10,"state":0,"command":"on","desk":"off","web":"on","fast":["on","off","restart","SSH"]},
+{"manageIP":"127.0.0.17","type":"LENOVO 3650 M5","name":"N-1-17","warnstate":"正常","rate":10,"state":1,"command":"off","desk":"on","web":"on","fast":["on","off","restart","SSH"]},
+{"manageIP":"127.0.0.18","type":"LENOVO 3650 M5","name":"N-1-18","warnstate":"告警","rate":10,"state":1,"command":"on","desk":"on","web":"on","fast":["on","off","restart"]},
+{"manageIP":"127.0.0.19","type":"LENOVO 3650 M5","name":"N-1-19","warnstate":"正常","rate":10,"state":1,"command":"off","desk":"off","web":"off","fast":["on","off","restart","SSH"]},
+{"manageIP":"127.0.0.20","type":"LENOVO 3650 M5","name":"N-120","warnstate":"正常","rate":10,"state":1,"command":"off","desk":"on","web":"off","fast":["SSH"]}
+]

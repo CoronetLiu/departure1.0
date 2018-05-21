@@ -1,0 +1,22 @@
+[
+    {
+        "name":"云平台1",
+        "bussinessId":"cloud1"
+    },
+    {
+        "name":"云平台2",
+        "bussinessId":"cloud2"
+    },
+    {
+        "name":"云资源池1",
+        "bussinessId":"cloudResource1"
+    },
+    {
+        "name":"云资源池2",
+        "bussinessId":"cloudResource2"
+    },
+    {
+        "name":"云资源池2",
+        "bussinessId":"cloudResource3"
+    }
+]

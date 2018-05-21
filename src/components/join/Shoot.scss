@@ -1,0 +1,175 @@
+/*
+* @Author:  CoronetLiu
+* @Date:    2018-04-09 15:52:10
+* @Last Modified by:    CoronetLiu
+* @Last Modified time:  2018-04-17 14:37:14
+* @Email:   liu86931@163.com
+*/
+#shoot{
+
+#top-c{
+  height:100%;
+  position:relative;
+}
+#myCanvas-c{
+  float:left;
+  margin-left:20px;
+}
+#container-c{
+  // float:right;
+  position:absolute;
+  z-index: 1;
+  right:-490px;
+  top:8px;
+  width:520px;
+  height:800px;
+  border:2px solid #f00;
+  background:#ddd;
+  overflow-x:hidden;
+  overflow-y:auto;
+  transition: all 1s;
+}
+#container-c:hover{
+  right:0px;
+}
+.createImg{
+  margin:5px;
+  max-width: none;
+}
+#moveDiv{
+  z-index:610;
+  cursor:move;
+  // border:1px solid #00f;
+  opacity:0.7;
+}
+label{
+  margin-left:10px;
+  display:inline-block;
+  width:90px;
+}
+select,input{
+    height:28px;
+    font-size:14px;
+    padding-left:5px;
+    margin-left:5px;
+}
+#lab-factory{
+  width:140px;
+  margin-left:20px;
+}
+#lab-type{
+  width:200px;
+}
+#lab-front{
+  width:100px;
+}
+#front{
+  width:60px;
+}
+#data-box-c{
+    display: flex;
+    justify-content: space-around;
+    height:30px;
+    padding:10px 0;
+}
+#data-inner-box-c{
+    display:none;
+    position:absolute;
+    z-index:300;
+    width:250px;
+    background:#6387d8;
+    border-radius:5px;
+    padding:10px 5px;
+}
+#showWH{
+  margin-bottom:10px;
+}
+#btn-c{
+    margin:0 10px;
+    height:30px;
+    width:80px;
+}
+#shoot-type{
+    width: 130px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.data-c{
+  background:#fff;
+  border:none;
+  border:1px solid #ccc;
+  height:28px;
+  width:50px;
+  padding:0 0 0 10px;
+  margin-left:5px;
+}
+#confirm-c,#clear-c,#back-c{
+  margin-left:30px;
+  height:30px;
+  width:80px;
+}
+#box-c{
+  float:left;
+  // border:1px solid #f0f;
+  text-align:center !important;
+  margin:10px 0 20px 20px;
+}
+#save-c{
+    background:#6fde42;
+    color:#fff;
+    display:inline-block;
+    height:28px;
+    width:80px;
+    line-height: 28px;
+    text-align:center;
+    text-decoration:none;
+    border-radius:10px;
+    margin-left:60px;
+    cursor:pointer;
+}
+#myCanvas-cc{
+  float:left;
+  position:absolute;
+  display:none;
+  border:1px solid red;
+}
+#myCanvas-none{
+  position:absolute;
+  z-index:-1;
+  top:-10000px;
+}
+#type-container{
+  display:inline-block;
+  width:165px;
+  height: 28px;
+  border:1px solid #ccc
+}
+#factory-container{
+  display:inline-block;
+  width:100px;
+  height: 28px;
+  border:1px solid #ccc
+}
+#type{
+  border: none;
+  outline: none;
+  width: 100%;
+  margin:0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  // padding-left: 10px;
+}
+#factory{
+  border: none;
+  outline: none;
+  width: 100%;
+  margin:0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  // padding-left: 10px;
+}
+
+}//shoot

@@ -1,0 +1,222 @@
+/*
+* @Author:  CoronetLiu
+* @Date:    2018-04-11 15:13:15
+* @Last Modified by:    CoronetLiu
+* @Last Modified time:  2018-04-26 11:02:43
+* @Email:   liu86931@163.com
+*/
+#monitor{
+    height:100%;
+    position:relative;
+    .rate-btn{
+        display:inline-block;
+        position:relative;
+        width:80px;
+        height:30px;
+        padding-right:10px;
+        background:#009688;
+        color:#fff;
+        border:none;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right:10px;
+        font-size:12px;
+        line-height:30px;
+
+        .arrowA{
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid dashed dashed;
+            border-color: #fff transparent transparent;
+            overflow: hidden;
+            cursor: pointer;
+            position: absolute;
+            top: 12px;
+            right: 5px;
+            border-width: 5px;
+            border-top-color: rgba(255,255,255,.9);
+        }
+        .rate-list{
+            position:absolute;
+            z-index:10;
+            top:30px;
+            left:0px;
+            width:100%;
+            background:#fff;
+            li{
+                height:25px;
+                border:1px dashed #ccc;
+                border-top:none;
+                line-height:25px;
+                text-align:center;
+                color:#000;
+            }
+        }
+    }
+    table{
+        // text-align:center;
+    }
+    .btns{
+        height:30px;
+        padding-right:10px;
+        padding-top:10px;
+        display:flex;
+        justify-content:space-between;
+        .adddevice-monitor{
+            margin-left:10px;
+        }
+        .search-monitor{
+            .search1-container,.search2-container,.search3-container{
+                display:inline-block;
+                position:relative;
+            }
+            .search1-list,.search2-list,.search3-list{
+                display:none;
+                position:absolute;
+                z-index:2;
+                left:0;
+                top:27px;
+                background:#fff;
+                width:82px;
+                li{
+                    height:25px;
+                    border:1px dashed #ccc;
+                    border-top:none;
+                    line-height:25px;
+                    text-align:center;
+                    color:#000;
+                    cursor:pointer;
+                }
+            }
+            input{
+                width:80px;
+                height:25px;
+                line-height:25px;
+                outline:none;
+                border:none;
+                border:1px solid #ccc;
+                background:#fff;
+                cursor:pointer;
+                display:inline-block;
+                margin-right:10px;
+                color:#000;
+                text-align:center;
+            }
+            .search4{
+                margin-left:30px;
+                width:120px;
+            }
+            .search{
+                width:80px;
+            }
+        }
+    }
+    .change-dir{
+        margin-left:10px;
+    }
+    .change-dir>ul{
+        background:#4c6079;
+        height:30px;
+    }
+    .change-dir li{
+        cursor:pointer;
+    }
+    .change-dir>ul>li{
+        color:#fff;
+        float:left;
+        width:100px;
+        height:30px;
+        line-height:30px;
+        text-align:center;
+        position:relative;
+        ul{
+            position:absolute;
+            z-index:10;
+            width:100px;
+            display:none;
+        }
+    }
+    .change-dir>ul>li:nth-child(1){
+        border-right: 1px solid #ccc
+    }
+    .change-dir>ul>li>ul{
+        left:0px;
+        top:30px;
+        background-color: rgba(70, 70, 90, 0.8);
+    }
+    .change-dir>ul>li>ul>li{
+        position:relative;
+        border-bottom:1px solid #ccc;
+    }
+    .change-dir>ul>li>ul>li>ul{
+        left:100px;
+        top:0px;
+        background-color: rgba(110, 110, 120, 0.8);
+        li{
+            border-bottom:1px solid #fff;
+        }
+    }
+    .span1{
+        display:inline-block;
+        width:110px;
+        height:16px;
+        a{
+            float:left;
+        }
+    }
+    .span2{
+        display:inline-block;
+        width:135px;
+        height:16px;
+        a{
+            float:left;
+        }
+    }
+    .demoTable{
+        // float:right;
+    }
+    .operate-btn{
+        display:inline-block;
+        height:25px;
+        width:32px;
+        margin-left:0px;
+        padding:0;
+        background:url("../../../resource/images/default.png") center center no-repeat;
+    }
+    .command{
+        background:url("../../../resource/images/operate.png") 0px -25px no-repeat;
+    }
+    .desk{
+        background:url("../../../resource/images/operate.png") 0px -49px no-repeat;
+    }
+    .web{
+        background:url("../../../resource/images/operate.png") 0px -1px no-repeat;
+    }
+    .on{
+        background:url("../../../resource/images/operate.png") 0px -97px no-repeat;
+    }
+    .off{
+        background:url("../../../resource/images/operate.png") 0px -73px no-repeat;
+    }
+    .restart{
+        background:url("../../../resource/images/operate.png") 0px -121px no-repeat;
+    }
+
+
+    .layui-laypage{
+        display:flex;
+        justify-content: center;
+    }
+    .confirm-monitor{
+        display:block;
+    }
+    #tips{
+        display:none;
+        position:absolute;
+        background-image: linear-gradient(to top, #ddd, #fff);
+        border:1px solid #ccc;
+        border-radius: 3px;
+        padding:3px;
+    }
+}//monitor

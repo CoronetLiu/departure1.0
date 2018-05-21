@@ -1,0 +1,113 @@
+/*
+* Author: CoronetLiu   2018/5/14
+*/
+
+#dimension-man{
+    height:100%;
+    position:relative;
+    .change-dir{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 130px 0 10px;
+        height: 30px;
+    }
+    .change-dir>ul{
+        background:#4c6079;
+        height:30px;
+        cursor: pointer;
+        li{
+            color:#fff;
+            float:left;
+            width:100px;
+            height:30px;
+            line-height:30px;
+            text-align:center;
+            position:relative;
+            ul{
+                display: none;
+                position:absolute;
+                z-index:10;
+                width:100px;
+                //display:none;
+                left:0px;
+                top:30px;
+                background-color: rgba(70, 70, 90, 0.8);
+                li{
+                    border-bottom:1px solid #ccc;
+                }
+            }
+        }
+    }
+    .change-dir ul li:nth-child(1){
+        border-right: 1px solid #ccc
+    }
+
+
+
+
+    #dim-container{
+        width:1100px;
+        margin:0 auto;
+        padding-bottom:20px;
+    }
+    .layui-laypage{
+        display:flex;
+        justify-content: center;
+    }
+    .layui-table-cell{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .layui-table-page{
+        background:#fff;
+    }
+    .confirm-monitor{
+        display:block;
+    }
+}//dimension
+
+    .dim-bef{
+        display:inline-block;
+        width:100px;
+        text-align:right;
+    }
+    .modify-center,.modify-room,.modify-rowcol,.modify-cab,.modify-unum,.modify-power{
+        margin-left:5px;
+        height:25px;
+        text-align:center;
+        border:none;
+        border:1px solid #ccc;
+        width:230px;
+    }
+    .arrow-dim-dc,.arrow-dim-dr,.arrow-dim-drc{
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid dashed dashed;
+        border-color: #000 transparent transparent;
+        overflow: hidden;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        left: 310px;
+        border-width: 10px;
+        border-top-color: rgba(0,0,0,.7);
+    }
+    .dim-dc-list,.dim-dr-list,.dim-drc-list{
+        display:none;
+        position:absolute;
+        z-index:10;
+        top:40px;
+        left:109px;
+        width:232px;
+        background:#fff;
+        li{
+            height:25px;
+            border:1px dashed #ccc;
+            border-top:none;
+            line-height:25px;
+            text-align:center;
+            color:#000;
+        }
+    }

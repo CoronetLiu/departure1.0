@@ -1,0 +1,82 @@
+/*
+* @Author:  CoronetLiu
+* @Date:    2018-04-03 16:57:26
+* @Last Modified by:    CoronetLiu
+* @Last Modified time:  2018-05-03 14:32:35
+* @Email:   liu86931@163.com
+*/
+
+/*--------------     reset    ----------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+    font-family: "Times New Roman"!important;
+}
+
+a {
+    color:#000 !important;
+    margin: 0;
+    padding: 0;
+    cursor:pointer;
+    text-decoration:none;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ul,li,ol{
+    list-style:none;
+}
+
+th {
+   font-weight: bold;
+   vertical-align: middle;
+}
+td {
+   font-weight: normal;
+   vertical-align: middle;
+}
+td, td img {
+   vertical-align: middle;
+}
+
+input, select {
+   vertical-align: middle;
+}
+input[type="radio"] {
+   vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+   vertical-align: bottom;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+
+@font-face {
+    font-family: 'anticon';
+    src: url('./iconfont/iconfont.eot');
+    /* IE9*/
+    src: url('./iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* chrome、firefox */
+    url('./iconfont/iconfont.woff') format('woff'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('./iconfont/iconfont.ttf') format('truetype'), /* iOS 4.1- */
+    url('./iconfont/iconfont.svg#iconfont') format('svg');
+}

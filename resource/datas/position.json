@@ -1,0 +1,37 @@
+[
+    {
+        "dataCenter":"国家电网",
+        "dataRoom":"辽阳机房",
+        "dataCab":"A",
+        "dataRowCol":"A1",
+        "cabinetId":"111"
+    },
+    {
+        "dataCenter":"国家电网",
+        "dataRoom":"辽阳机房",
+        "dataCab":"A",
+        "dataRowCol":"A2",
+        "cabinetId":"222"
+    },
+    {
+        "dataCenter":"国家电网",
+        "dataRoom":"辽阳机房",
+        "dataCab":"A",
+        "dataRowCol":"A3",
+        "cabinetId":"333"
+    },
+    {
+        "dataCenter":"集团",
+        "dataRoom":"集团机房",
+        "dataCab":"B",
+        "dataRowCol":"B1",
+        "cabinetId":"444"
+    },
+    {
+        "dataCenter":"测试",
+        "dataRoom":"测试机房",
+        "dataCab":"C",
+        "dataRowCol":"C1",
+        "cabinetId":"555"
+    }
+]

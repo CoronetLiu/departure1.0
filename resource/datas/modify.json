@@ -1,0 +1,47 @@
+[
+    {
+        "businessIP":"2.2.2.2",
+        "collector":"192.168.0.1",
+        "deviceType":"存储",
+        "manageIP":"1.1.1.1",
+        "managePassword":"1",
+        "manageUsername":"1"
+    },
+    {
+        "KVMPort":"443",
+        "businessSys":"cloudResource1",
+        "collectPort":{"IPMIPort": "11", "SSH2Port": "22"},
+        "collectType":"IPMI+SSH2",
+        "command":[{"command1": "q", "command2": "q"},
+                    {"command1": "a", "command2": "a"},
+                    {"command1": "z", "command2": "z"}
+                    ],
+        "concat":"张三,李四",
+        "deskCollector":"192.168.0.2",
+        "endDate":"2018-04-25",
+        "fast":[{"fastCollect": "IPMI", "fastName": "开机", "fastCommand": "on"},
+                {"fastCollect": "IPMI", "fastName": "关机", "fastCommand": "off"},
+                {"fastCollect": "IPMI", "fastName": "重启", "fastCommand": "restart"}],
+        "fatherBusinessIP":"7.7.7.7",
+        "fatherManageIP":"6.6.6.6",
+        "ifDesk":"是",
+        "ifFast":"是",
+        "ifManage":"是",
+        "ifWeb":"是",
+        "joinFactory":"HP",
+        "joinSymbol":">",
+        "joinType":"385 G7",
+        "localport":"8080",
+        "manageURL":"http://192.168.1.1",
+        "manageIP2":["3.3.3.3", "4.4.4.4", "5.5.5.5"],
+        "master":"host",
+        "position":[{"cabinetId": "333", "start": "1", "end": "4"},
+                    {"cabinetId": "444", "start": "6", "end": "7"},
+                    {"cabinetId": "555", "start": "8", "end": "9"}],
+        "repair":"HP",
+        "transferport":[{"port1": "10", "port2": "20"},
+                        {"port1": "30", "port2": "40"},
+                        {"port1": "50", "port2": "60"}],
+        "webCollector":"192.168.0.3"
+    }
+]

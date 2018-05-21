@@ -1,0 +1,88 @@
+#room{
+    height: 100%;
+    width: 100%;
+    // overflow: auto;
+    position:relative;
+    background:url("../../../resource/images/room/bgGroup.png") repeat 100% 100%;
+
+.top-cl{
+    height:0px;
+    width:100%;
+    position: relative;
+}
+.brief-box{
+    position: absolute;
+    z-index:6;
+    left:-125px;
+    top:100px;
+    transition: all .5s;
+}
+.change-box{
+    position:absolute;
+    z-index:5;
+    left:-115px;
+    top:215px;
+    transition: all .5s;
+}
+.brief-content{
+    float:left;
+    width:125px;
+    height:150px;
+    background:#ccc;
+    font:13px 微软雅黑;
+}
+.change-content{
+    float:left;
+    width:115px;
+    height:210px;
+    background:#ccc;
+    font:13px 微软雅黑;
+}
+.brief-name{
+    display: inline-block;
+    padding:5px 0px;
+    font:17px 微软雅黑;
+    text-align:center;
+    width:32px;
+    height:121px;
+    background:url('../../../resource/images/room/room_introduce.png') 0 0 no-repeat;
+}
+.change-name{
+    display: inline-block;
+    padding:5px 0px;
+    font:17px 微软雅黑;
+    text-align:center;
+    width:32px;
+    height:121px;
+    background:url('../../../resource/images/room/room_switch.png') 0 0 no-repeat;
+}
+.room-data-name{
+    font-size:15px;
+}
+.room-list1>li{
+    padding:3px 5px;
+    font-size:14px;
+}
+.room-list2>li{
+    padding:3px 20px;
+}
+.brief-box:hover{
+    left:0
+}
+.change-box:hover{
+    left:0
+}
+.dropName{
+    list-style-type:none;
+    background-image:url('../../../resource/images/room/right.png');
+    background-position:5px 6px;
+    background-repeat:no-repeat;
+    background-size:13px 13px;
+    padding-left:20px;
+}
+.drop-engineRoom{
+    display:none;
+}
+
+
+}//room
