@@ -348,6 +348,7 @@ class Monitor extends React.Component {
                     icon:6,
                     skin: 'layui-layer-molv',
                     anim: 4,
+                    move:false,
                     btn:["确定"],
                     yes: function(index, layero){  //第一个按钮的回调函数
                         _this.state.$rateObj.innerHTML = that.value;
