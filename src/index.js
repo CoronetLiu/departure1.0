@@ -18,6 +18,7 @@ import MonitorDetail from './components/monitor/MonitorDetail';
 import MonitorModify from './components/monitor/MonitorModify';
 import Warn from './components/warn/Warn.js';
 import DimensionMan from './components/setting/DimensionMan.js';
+import MailSet from './components/setting/MailSet.js';
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -38,6 +39,7 @@ ReactDOM.render(
                 <Route path="/monitormodify" component={MonitorModify}></Route>
                 <Route path="/warn" component={Warn}></Route>
                 <Route path="/dimension" component={DimensionMan}></Route>
+                <Route path="/mailset" component={MailSet}></Route>
                 {/* <Route path="/mine" component={Mine}>
                         <Route path="/login" component={Login}></Route>
                     </Route>

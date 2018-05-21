@@ -1,0 +1,115 @@
+/*
+* Author: CoronetLiu   2018/5/14
+*/
+
+#mail-set{
+    min-height:90%;
+    width:90%;
+    margin:0 auto;
+    margin-top:20px;
+    position:relative;
+    border:8px solid #e6e6e6;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    .mail-top{
+        display: flex;
+        background:#e6e6e6;
+        .mail-base,.mail-noti{
+            height:30px;
+            line-height:30px;
+            text-align: center;
+            width:80px;
+            color:#676a6c;
+            cursor:pointer;
+            font-weight: bold;
+            border-radius: 5px 5px 0 0;
+        }
+        .active{
+            background: #fff;
+            color:#555555;
+        }
+    }
+    .mail-bottom{
+        flex:1;
+        background: #fff;
+        .base-content{
+            display: none;
+            height:100%;
+            padding-top:30px;
+            label{
+                display: block;
+                height:30px;
+                margin:10px 0;
+                padding-left:150px;
+                span{
+                    display: inline-block;
+                    width:80px;
+                    height:30px;
+                    line-height: 30px;
+                    text-align: right;
+                    padding-right:10px;
+                }
+                .smtp-tip{
+                    width:230px;
+                    font-size: 12px;
+                    color:#737373;
+                    text-align: center;
+                    padding:0;
+                }
+                input{
+                    height:30px;
+                    width:400px;
+                    padding-left:10px;
+                    border:none;
+                    border:1px solid #e6e6e6;
+                    box-sizing: border-box;
+                }
+                .smtp-ssl,.smtp-tls{
+                    width:20px;height:30px;
+                }
+            }
+            .smtp-btns{
+                padding:0;
+                margin-top:30px;
+                .smtp-reset{
+                    margin-left:250px;
+                }
+            }
+        }
+        .noti-content{
+            height:100%;
+            .mail-operator{
+                width:997px;
+                margin:0 auto;
+                margin-top:5px;
+                button{
+                    float:right;
+                }
+                .delete-mail{
+                    margin:0 20px 0 20px;
+                }
+            }
+        }
+    }
+
+    #mail-container{
+        width:997px;
+        margin:0 auto;
+    }
+    .layui-laypage{
+        display:flex;
+        justify-content: center;
+    }
+    .layui-table-cell{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .layui-table-page{
+        background:#fff;
+    }
+    .confirm-monitor{
+        display:block;
+    }
+} //mailset
