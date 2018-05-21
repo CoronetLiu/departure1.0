@@ -32,7 +32,7 @@ module.exports = {
         filename:"[name]_[chunkHash:3].js" //导出文件名
         // filename:"app_[hash].js"
         // filename:"app_"+Date.now()+".js"
-        // ,publicPath:"/dist"
+        // ,publicPath:"./"
     },
     devServer:{
         contentBase:"./dist", //服务器开启目录
@@ -41,7 +41,7 @@ module.exports = {
         historyApiFallback:true,  //是否使用H5里HISTORYapi
         proxy:{
             '/api':{
-                target:'http://192.168.18.191:59609/obm',
+                target:'http://',
                 changeOrigin: false,
                 // secure:false, // https 时启用
                 pathRewrite:{
