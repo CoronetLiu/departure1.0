@@ -125,7 +125,7 @@ class Monitor extends React.Component {
 
     componentDidMount(){
         let _this = this;
-        this.loadDimension()
+        this.loadDimension();
         this.load();
 
         //添加设备事件
@@ -143,7 +143,7 @@ class Monitor extends React.Component {
         //change-dir事件  修改显示维度
         $(".plateform-dir").on("click",function(evt){
            if(evt.target.className.indexOf("listP") != -1){
-                let cont3 = "按平台（" + evt.target.innerHTML + "）"
+                let cont3 = "按平台（" + evt.target.innerHTML + "）";
                 _this.refs.dimMenu.changeDimension(cont3)
 
                 //渲染页面
@@ -345,7 +345,7 @@ class Monitor extends React.Component {
             }).then(function(res){
                 // 修改成功
                 layer.alert("修改成功！",{
-                    icon:7,
+                    icon:6,
                     skin: 'layui-layer-molv',
                     anim: 4,
                     btn:["确定"],
@@ -806,7 +806,7 @@ class Monitor extends React.Component {
                     if(item.rooms.length){
                         item.rooms.map((it,ind) => {
                             ul += `<li class="listP" data-id="${it.id}">${it.roomName}</li>`
-                        })
+                        });
                         ul = '<ul>' + ul + '</ul>'
                     }
                     $(".position-dir")[0].children[0].innerHTML +=
