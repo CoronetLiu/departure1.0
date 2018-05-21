@@ -130,7 +130,7 @@ class Menu extends React.Component {
                                     <li><Link to="/home" className="jump">历史故障</Link></li>
                                 </ul>
                             </li>
-                            <li><Link to="/join" className="jump">日志</Link></li>
+                            <li><Link to="/join" className="jump">日志分析</Link></li>
                         </ul>
                         <span className="nav-bar"></span>
                     </li>
