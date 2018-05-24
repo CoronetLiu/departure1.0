@@ -93,7 +93,7 @@ class Combine extends React.Component {
                             <canvas id="myCanvas-c" width="600"></canvas>
                             <div id="container-c"></div>
                             <div id="box-c">
-                                {/*<img src='../assets/images/example.png' alt="" id="target-c"/>*/}
+                                {/*<img src='../../assets/images/example.png' alt="" id="target-c"/>*/}
                             </div>
                             <div id="data-inner-box-c">
                                 <div id="showWH">
