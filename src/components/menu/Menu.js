@@ -213,7 +213,7 @@ class Menu extends React.Component {
 
         //查询告警数量
         // setTimeout(function(){
-        //     axios.get('../resource/datas/warnnum.json').then(function(res){
+        //     axios.get('./assets/datas/warnnum.json').then(function(res){
         //         console.log(res)
         //         $(".warn-bar").html(res.data[0].num)
         //     },function(){

@@ -210,7 +210,7 @@ class Monitor extends React.Component {
                     $(".rate-list")[0].style.display = "none"
                 }
             }else if(event.target.className == "rate-li"){
-                axios.get("../resource/datas/data.json",{
+                axios.get("./assets/datas/data.json",{
                     params:{
                         rate:Number(event.target.innerHTML)
                     }
@@ -231,7 +231,7 @@ class Monitor extends React.Component {
 
         //点击查询
         $("#monitor").on("click",".search",function(event){
-            axios.get("../resource/datas/data1.json",{
+            axios.get("./assets/datas/data1.json",{
                 params:{
                     search1:$(".search1").val(),
                     search2:$(".search2").val(),
@@ -337,7 +337,7 @@ class Monitor extends React.Component {
                 }
             }
             that.value = parseInt(that.value);
-            axios.get("../resource/datas/data2.json",{
+            axios.get("./assets/datas/data2.json",{
                 params:{
                     manageIP:manageIP,
                     rate:that.value
@@ -386,7 +386,7 @@ class Monitor extends React.Component {
                     skin: 'layui-layer-molv',
                     anim: 4
                 }, function(index){
-                    axios.get("../resource/datas/data2.json",{
+                    axios.get("./assets/datas/data2.json",{
                         params:{
                             manageIP:manageIP,
                             state:0
@@ -413,7 +413,7 @@ class Monitor extends React.Component {
                     skin: 'layui-layer-molv',
                     anim: 4
                 }, function(index){
-                    axios.get("../resource/datas/data1.json",{
+                    axios.get("./assets/datas/data1.json",{
                         params:{
                             manageIP:manageIP,
                             state:1
@@ -469,7 +469,7 @@ class Monitor extends React.Component {
                     anim: 4
                 }, function(index){
                 checkDatas.map((item)=>{
-                    axios.get("../resource/datas/data1.json",{
+                    axios.get("./assets/datas/data1.json",{
                         params:{
                             manageIP:item,
                             state:1
@@ -535,7 +535,7 @@ class Monitor extends React.Component {
                     anim: 4
                 }, function(index){
                 checkDatas.map((item)=>{
-                    axios.get("../resource/datas/data2.json",{
+                    axios.get("./assets/datas/data2.json",{
                         params:{
                             manageIP:item,
                             state:0
@@ -602,7 +602,7 @@ class Monitor extends React.Component {
                     anim: 4
                 }, function(index){
                 checkDatas.map((item)=>{
-                    axios.get("../resource/datas/data3.json",{
+                    axios.get("./assets/datas/data3.json",{
                         params:{
                             manageIP:item
                         }
@@ -794,7 +794,7 @@ class Monitor extends React.Component {
     //加载维度信息
     loadDimension(){
         let _this = this;
-        axios.get("../resource/datas/dimension.json").then(function(res){
+        axios.get("./assets/datas/dimension.json").then(function(res){
             if(!res.data){
                 return;
             }
@@ -822,7 +822,7 @@ class Monitor extends React.Component {
     //初次渲染页面
     load(){
         let _this = this;
-        axios.get("../resource/datas/data.json").then(function(res){
+        axios.get("./assets/datas/data.json").then(function(res){
             $("#table-container").html(`
                     <table className="layui-hide" id="monitor-table" lay-filter="demo"></table>
                     <script type="text/html" id="barMonitor">
@@ -851,7 +851,7 @@ class Monitor extends React.Component {
                         <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
                     </script>
                     <script type="text/html" id="devicename">
-                            <span style="display:block;padding-right:15px;background:url('../resource/images/lookup.png') no-repeat right center;">{{ d.name }}</span>
+                            <span style="display:block;padding-right:15px;background:url('../assets/images/lookup.png') no-repeat right center;">{{ d.name }}</span>
                     </script>
                     <script type="text/html" id="warnstate">
                         {{#  if(d.warnstate === '正常'){ }}
@@ -908,7 +908,7 @@ class Monitor extends React.Component {
             //     // data = obj.data, //得到所在行所有键值
             //     // field = obj.field; //得到字段
             //     // layer.msg('[ID: '+ data.id +'] ' + field + ' 字段更改为：'+ value);
-            //     axios.get("../resource/datas/data1.json",{
+            //     axios.get("./assets/datas/data1.json",{
             //         params:{
             //             rate:Number(value)
             //         }
@@ -938,7 +938,7 @@ class Monitor extends React.Component {
                         anim: 4
                     }, function(index){
                         // obj.del();
-                        axios.get("../resource/datas/data3.json",{
+                        axios.get("./assets/datas/data3.json",{
                             params:{
                                 manageIP:obj.data.manageIP
                             }
@@ -1171,7 +1171,7 @@ class Monitor extends React.Component {
                     });
                 } else if(obj.event === 'lookup'){
                     // layer.msg('ID：'+ data.id + ' 的查看操作');
-                    axios.get("../resource/datas/data.json",{
+                    axios.get("./assets/datas/data.json",{
                         params:{
                                 manageIP:obj.data.manageIP
                             }

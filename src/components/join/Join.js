@@ -755,10 +755,10 @@ class Join extends React.Component {
                 maxHeight:"40px"
             });
             $(".updown").css({
-                backgroundImage : "url('../resource/images/down.png')"
+                backgroundImage : "url('../assets/images/down.png')"
             });
             $(".join-one .updown").css({
-                backgroundImage : "url('../resource/images/up.png')"
+                backgroundImage : "url('../assets/images/up.png')"
             });
             $(".collect-port-container").html("")
         });
@@ -828,7 +828,7 @@ class Join extends React.Component {
                             let form = document.getElementById('upLoadForm');
                             let formData = new FormData(form);
                             $.ajax({
-                                url:"../resource/datas/data.json",
+                                url:"./assets/datas/data.json",
                                 // url:"api/cabinetview/filesUpload",
                                 type:"GET",  // 上传POST
                                 processData: false,  // 不处理数据   //  formData 时启用
@@ -936,7 +936,7 @@ class Join extends React.Component {
                     arr.push(OBJ2);
                 }
                 // console.log(arr);
-                axios.get("../resource/datas/data.json",{
+                axios.get("./assets/datas/data.json",{
                     params:{
                         joinMessage:JSON.stringify(arr)
                     }
@@ -1075,7 +1075,7 @@ class Join extends React.Component {
                 });
                 return;
             }else{
-                axios.get("../resource/datas/data.json",{
+                axios.get("./assets/datas/data.json",{
                     params:{
                         autoStartIP:$(".auto-startIP").val(),
                         autoEndIP:$(".auto-endIP").val(),
@@ -1252,10 +1252,10 @@ class Join extends React.Component {
                 maxHeight:"40px"
             });
             $(".updown").css({
-                backgroundImage : "url('../resource/images/down.png')"
+                backgroundImage : "url('../assets/images/down.png')"
             });
             $(".join-one .updown").css({
-                backgroundImage : "url('../resource/images/up.png')"
+                backgroundImage : "url('../assets/images/up.png')"
             });
             $(".collect-port-container").html("");
             OBJ2 = {}
@@ -1410,16 +1410,16 @@ class Join extends React.Component {
         $(".updown").on("click",function(){
             if(this.parentNode.style.maxHeight == "40px"){
                 this.parentNode.style.maxHeight = "none";
-                this.style.backgroundImage = "url('../resource/images/up.png')"
+                this.style.backgroundImage = "url('../assets/images/up.png')"
             }else{
                 this.parentNode.style.maxHeight = "40px";
-                this.style.backgroundImage = "url('../resource/images/down.png')"
+                this.style.backgroundImage = "url('../assets/images/down.png')"
             }
         });
 
         //联系人点击事件
         $(".join-concat").on("click",function(evt){
-            axios.get("../resource/datas/concat.json").then(function(res){
+            axios.get("./assets/datas/concat.json").then(function(res){
                 // console.log(res.data)
                 let str0 = '';
                 res.data.map((item,index)=>{
@@ -1552,7 +1552,7 @@ class Join extends React.Component {
                                     }
                                     layer.close(index);
                                     //发送数据
-                                    axios.get("../resource/datas/concat.json",{
+                                    axios.get("./assets/datas/concat.json",{
                                         params:{
                                             name:$(".concat-name").val(),
                                             tel:$(".concat-tel").val(),
@@ -1587,7 +1587,7 @@ class Join extends React.Component {
 
         //点击业务系统事件
         $(".join-business-sys").on("click",function(){
-            axios.get("../resource/datas/businesssys.json").then(function(res){
+            axios.get("./assets/datas/businesssys.json").then(function(res){
                 // console.log(res.data)
                 let str0 = '';
                 res.data.map((item,index)=>{
@@ -1693,7 +1693,7 @@ class Join extends React.Component {
                                     }
                                     layer.close(index);
                                     //发送数据
-                                    axios.get("../resource/datas/businesssys.json",{
+                                    axios.get("./assets/datas/businesssys.json",{
                                         params:{
                                             name:$(".businesssys-name").val()
                                         }
@@ -1727,7 +1727,7 @@ class Join extends React.Component {
         //点击位置事件
         $("#join").on("click",".join-position",function(evt){
             let that = this;
-            axios.get("../resource/datas/position.json").then(function(res){
+            axios.get("./assets/datas/position.json").then(function(res){
                 // console.log(res.data)
                 let str0 = '';
                 res.data.map((item,index)=>{
@@ -1968,7 +1968,7 @@ class Join extends React.Component {
                                     }
                                     layer.close(index);
                                     //发送数据
-                                    axios.get("../resource/datas/position.json",{
+                                    axios.get("./assets/datas/position.json",{
                                         params:{
                                             dataCenter:$(".position-dataCenter").val(),
                                             dataRoom:$(".position-dataRoom").val(),

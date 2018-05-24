@@ -55,14 +55,6 @@ module.exports = {
                 pathRewrite:{
                     '^/serverURL':'/'
                 }
-            },
-            "/python":{
-                target:'http://stanford.edu/~boyd/cvxbook/cvxbook_additional_exercises',
-                changeOrigin: false,
-                // secure:false, // https 时启用
-                pathRewrite:{
-                    '^/python':'/'
-                }
             }
         }
     },
@@ -89,7 +81,7 @@ module.exports = {
         //启用作用域提升，让代码文件更小、运行更快
         new webpack.optimize.ModuleConcatenationPlugin(),
         new CopyWebpackPlugin([
-            { from: path.resolve(__dirname, "./resource"), to: path.resolve(__dirname, './dist/resource') },
+            { from: path.resolve(__dirname, "./src/assets"), to: path.resolve(__dirname, './dist/assets') },
         ])
     ],
     module:{

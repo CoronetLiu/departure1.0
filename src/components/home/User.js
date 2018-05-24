@@ -134,7 +134,7 @@ class User extends React.Component {
                         });
                         return;
                     }
-                    axios.get("../resource/datas/users2.json",{
+                    axios.get("./assets/datas/users2.json",{
                         params:{
                             user:$(".modify-user").val(),
                             password:$(".modify-password").val(),
@@ -206,7 +206,7 @@ class User extends React.Component {
                     anim: 4
                 }, function(index){
                 checkDatas.map((item)=>{
-                    axios.get("../resource/datas/users1.json",{
+                    axios.get("./assets/datas/users1.json",{
                         params:{
                             id:item
                         }
@@ -223,7 +223,7 @@ class User extends React.Component {
 
     load(){
         let _this = this;
-        axios.get("../resource/datas/users.json").then(function(res){
+        axios.get("./assets/datas/users.json").then(function(res){
             $("#user-container").html(`
                     <table className="layui-hide" id="user-table" lay-filter="demo"></table>
                     <script type="text/html" id="barUser">
@@ -310,7 +310,7 @@ class User extends React.Component {
                         anim: 4
                     }, function(index){
                         // obj.del();
-                        axios.get("../resource/datas/users1.json",{
+                        axios.get("./assets/datas/users1.json",{
                             params:{
                                 user:obj.data.user
                             }
@@ -433,7 +433,7 @@ class User extends React.Component {
                                 });
                                 return;
                             }
-                            axios.get("../resource/datas/users2.json",{
+                            axios.get("./assets/datas/users2.json",{
                                 params:{
                                     id:obj.data.id,
                                     user:$(".modify-user").val(),

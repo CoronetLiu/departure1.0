@@ -3,7 +3,7 @@
     width: 100%;
     // overflow: auto;
     position:relative;
-    background:url("../../../resource/images/room/bgGroup.png") repeat 100% 100%;
+    background:url("../../assets/images/room/bgGroup.png") repeat 100% 100%;
 
 .top-cl{
     height:0px;
@@ -45,7 +45,7 @@
     text-align:center;
     width:32px;
     height:121px;
-    background:url('../../../resource/images/room/room_introduce.png') 0 0 no-repeat;
+    background:url('../../assets/images/room/room_introduce.png') 0 0 no-repeat;
 }
 .change-name{
     display: inline-block;
@@ -54,7 +54,7 @@
     text-align:center;
     width:32px;
     height:121px;
-    background:url('../../../resource/images/room/room_switch.png') 0 0 no-repeat;
+    background:url('../../assets/images/room/room_switch.png') 0 0 no-repeat;
 }
 .room-data-name{
     font-size:15px;
@@ -74,7 +74,7 @@
 }
 .dropName{
     list-style-type:none;
-    background-image:url('../../../resource/images/room/right.png');
+    background-image:url('../../assets/images/room/right.png');
     background-position:5px 6px;
     background-repeat:no-repeat;
     background-size:13px 13px;

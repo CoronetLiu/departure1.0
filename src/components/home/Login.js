@@ -29,7 +29,7 @@ class Login extends React.Component {
                 <div id="login">
                     <div id="login-log">Out-of-Band Management</div>
                     <div id="login-box">
-                        <form id="loginForm" name="loginForm" method="post" action="../resource/datas/users.json">
+                        <form id="loginForm" name="loginForm" method="post" action="./assets/datas/users.json">
                             <label className="login-label">
                                 用户登录
                             </label>
@@ -51,7 +51,7 @@ class Login extends React.Component {
 
     componentDidMount(){
         $(".login-submit").on("click",function(){
-            axios.get("../resource/datas/users.json",{
+            axios.get("./assets/datas/users.json",{
                 params:{
                     username:$(".login-username").val(),
                     password:$(".login-password").val()

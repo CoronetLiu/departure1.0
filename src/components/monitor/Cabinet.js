@@ -42,7 +42,7 @@ let keyWarn = '';//关键告警
 let logWarn = '';//日志告警
 
 // let imageBaseUrl = '../dist/resource';
-let imageBaseUrl = '../resource';
+let imageBaseUrl = './assets';
 
 let serverURL = "/serverURL";
 // let serverURL = 'http://192.168.182.212:59609/obm';//zhangyilin

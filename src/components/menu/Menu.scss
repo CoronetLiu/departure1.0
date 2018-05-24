@@ -116,25 +116,25 @@
     transition:all 0.3s;
 }
 #menu-list>li:nth-child(1){
-        background:url('../../../resource/images/menupng/home.png') 17px 12px no-repeat;
+        background:url('../../assets/images/menupng/home.png') 17px 12px no-repeat;
     }
 #menu-list>li:nth-child(2){
-        background:url('../../../resource/images/menupng/join.png') 17px 12px no-repeat;
+        background:url('../../assets/images/menupng/join.png') 17px 12px no-repeat;
     }
 #menu-list>li:nth-child(3){
-        background:url('../../../resource/images/menupng/monitor.png') 17px 12px no-repeat;
+        background:url('../../assets/images/menupng/monitor.png') 17px 12px no-repeat;
     }
 #menu-list>li:nth-child(4){
-        background:url('../../../resource/images/menupng/warn.png') 17px 12px no-repeat;
+        background:url('../../assets/images/menupng/warn.png') 17px 12px no-repeat;
     }
 #menu-list>li:nth-child(5){
-        background:url('../../../resource/images/menupng/statistics.png') 17px 12px no-repeat;
+        background:url('../../assets/images/menupng/statistics.png') 17px 12px no-repeat;
     }
 #menu-list>li:nth-child(6){
-        background:url('../../../resource/images/menupng/setting.png') 17px 12px no-repeat;
+        background:url('../../assets/images/menupng/setting.png') 17px 12px no-repeat;
     }
 #menu-list>li:nth-child(7){
-        background:url('../../../resource/images/menupng/help.png') 17px 12px no-repeat;
+        background:url('../../assets/images/menupng/help.png') 17px 12px no-repeat;
     }
 #menu-head{
     position:absolute;
@@ -164,18 +164,18 @@
             color:#3afdfd!important;
             padding-left:25px;
             margin-left:5px;
-            background:url('../../../resource/images/next.png') left center no-repeat;
+            background:url('../../assets/images/next.png') left center no-repeat;
         }
         .content3{
             padding-left:25px;
             margin-left:5px;
-            background:url('../../../resource/images/next.png') left center no-repeat;
+            background:url('../../assets/images/next.png') left center no-repeat;
         }
     }
     #switch{
         float:left;
         width:25px;
-        background:url('../../../resource/images/turn.png') center center no-repeat;
+        background:url('../../assets/images/turn.png') center center no-repeat;
         color:#ccc;
     }
     #title{
@@ -184,13 +184,13 @@
         float:left;
         line-height:40px;
         text-align:center;
-        background:#2F4056 url('../../../resource/images/logo.png') center center no-repeat;
+        background:#2F4056 url('../../assets/images/logo.png') center center no-repeat;
         box-sizing: border-box;
         transition:all 0.3s;
     }
     .user{
         padding-left: 20px;
-        background: url('../../../resource/images/userphoto.png') left center no-repeat;
+        background: url('../../assets/images/userphoto.png') left center no-repeat;
         position: relative;
         .emp-tip{
             display: none;
@@ -207,7 +207,7 @@
     }
     .exit{
         padding-left: 20px;
-        background: url('../../../resource/images/exit.png') left 11px no-repeat;
+        background: url('../../assets/images/exit.png') left 11px no-repeat;
     }
 }
 

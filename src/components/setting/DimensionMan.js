@@ -212,7 +212,7 @@ class DimensionMan extends React.Component {
                         });
                         return;
                     }
-                    axios.get("../resource/datas/dimensiondevices.json",{
+                    axios.get("./assets/datas/dimensiondevices.json",{
                         params:{
                             dataCenter:$(".modify-center").val(),
                             dataRoom:$(".modify-room").val(),
@@ -283,7 +283,7 @@ class DimensionMan extends React.Component {
                     anim: 4
                 }, function(index){
                 checkDatas.map((item)=>{
-                    axios.get("../resource/datas/dimensiondevices1.json",{
+                    axios.get("./assets/datas/dimensiondevices1.json",{
                         params:{
                             cabineId:item
                         }
@@ -301,7 +301,7 @@ class DimensionMan extends React.Component {
 
     loadData(dim){
         let _this = this;
-        axios.get("../resource/datas/dimensiondevices.json",{
+        axios.get("./assets/datas/dimensiondevices.json",{
             params:{
                 keyDim:dim
             }
@@ -364,7 +364,7 @@ class DimensionMan extends React.Component {
                         anim: 4
                     }, function(index){
                         // obj.del();
-                        axios.get("../resource/datas/dimensiondevices1.json",{
+                        axios.get("./assets/datas/dimensiondevices1.json",{
                             params:{
                                 cabineId:obj.data.cabinetId
                             }
@@ -538,7 +538,7 @@ class DimensionMan extends React.Component {
                                 });
                                 return;
                             }
-                            axios.get("../resource/datas/dimensiondevices2.json",{
+                            axios.get("./assets/datas/dimensiondevices2.json",{
                                 params:{
                                     cabineId:obj.data.cabinetId,
                                     dataCenter:$(".modify-center").val(),

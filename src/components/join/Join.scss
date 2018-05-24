@@ -55,13 +55,13 @@
                     }
                 }
                 .step1{
-                    background:url('../../../resource/images/stepbar.png') 0 0 no-repeat;
+                    background:url('../../assets/images/stepbar.png') 0 0 no-repeat;
                 }
                 .step2{
-                    background:url('../../../resource/images/stepbar.png') 0 -34px no-repeat;
+                    background:url('../../assets/images/stepbar.png') 0 -34px no-repeat;
                 }
                 .step3{
-                    background:url('../../../resource/images/stepbar.png') 0 -34px no-repeat;
+                    background:url('../../assets/images/stepbar.png') 0 -34px no-repeat;
                 }
                 .step2{
                     margin:0 20px;
@@ -106,10 +106,10 @@
                         margin:3px 10px 0 0;
                         border-radius:12px;
                         border:1px solid #ddd;
-                        background:url('../../../resource/images/selected.png') 0px -26px no-repeat;
+                        background:url('../../assets/images/selected.png') 0px -26px no-repeat;
                     }
                     .type-selected{
-                        background:url('../../../resource/images/selected.png') 0px -1px no-repeat;
+                        background:url('../../assets/images/selected.png') 0px -1px no-repeat;
                     }
                 }//step1
                 .step2-content{
@@ -228,13 +228,13 @@
                             height:40px;
                             width:40px;
                             cursor:pointer;
-                            background:url("../../../resource/images/down.png") center center no-repeat;
+                            background:url("../../assets/images/down.png") center center no-repeat;
                         }
 
                     }
                     .join-one{
                         .updown{
-                            background:url("../../../resource/images/up.png") center center no-repeat;
+                            background:url("../../assets/images/up.png") center center no-repeat;
                         }
                         .join-commands{
                             margin-bottom:20px;

@@ -45,7 +45,7 @@ let dropDateCenterName = '';//下拉数据中心名称
 let dropEngineRoomName = '';//下拉机房名称
 
 //图片路径
-let imageBaseUrl = '../resource';
+let imageBaseUrl = './assets';
 //服务基本路径
 let serverURL = "/serverURL";
 
@@ -495,10 +495,10 @@ export default class Room extends React.Component {
                 lis[i].onclick = function(){
                     if(this.children[0].style.display == "block"){
                         this.children[0].style.display = "none";
-                        this.style.backgroundImage = 'url("../../../resource/images/room/right.png")';
+                        this.style.backgroundImage = 'url("../../assets/images/room/right.png")';
                     }else{
                         this.children[0].style.display = "block";
-                        this.style.backgroundImage = 'url("../../../resource/images/room/down.png")';
+                        this.style.backgroundImage = 'url("../../assets/images/room/down.png")';
                         for(var j = 0; j < ids.length; j++){
                             const roomId = ids[j].id;
                             ids[j].onclick = function(){
@@ -691,9 +691,9 @@ export default class Room extends React.Component {
                                     </canvas>
                                     <div className="test" ref="deviceDatas" style={myStyle}>
                                     </div>
-                                    {/*<img className="bigger" src="../../../resource/images/room/amplification.png" width={20} height={20} style={{left:8,top:10,position:"absolute",zIndex:50}}></img>
-                                                                        <img className="narrow" src="../../../resource/images/room/narrow.png" width={20} height={20} style={{left:8,top:35,position:"absolute",zIndex:50}}></img>
-                                                                        <img className="reset" src="../../../resource/images/room/reset.png" width={20} height={20} style={{left:8,top:60,position:"absolute",zIndex:50}}></img>*/}
+                                    {/*<img className="bigger" src="../../assets/images/room/amplification.png" width={20} height={20} style={{left:8,top:10,position:"absolute",zIndex:50}}></img>
+                                                                        <img className="narrow" src="../../assets/images/room/narrow.png" width={20} height={20} style={{left:8,top:35,position:"absolute",zIndex:50}}></img>
+                                                                        <img className="reset" src="../../assets/images/room/reset.png" width={20} height={20} style={{left:8,top:60,position:"absolute",zIndex:50}}></img>*/}
                                 </div>
                             </Col>
                             <Col span={12}>

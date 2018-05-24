@@ -3,7 +3,7 @@
     width: 100%;
     // overflow: auto;
     position:relative;
-    background:url("../../../resource/images/room/bgGroup.png") repeat 100% 100%;
+    background:url("../../assets/images/room/bgGroup.png") repeat 100% 100%;
 
 #report{
     position:absolute;
@@ -21,10 +21,10 @@ p{
 	padding:5px 10px;
 }
 .ok{
-	background:url('../../../resource/images/OK.png') 150px center no-repeat;
+	background:url('../../assets/images/OK.png') 150px center no-repeat;
 }
 .warn{
-	background:url('../../../resource/images/WARN.png') 150px center no-repeat;
+	background:url('../../assets/images/WARN.png') 150px center no-repeat;
 }
 .top-cabinet{
     height:0px;
@@ -52,7 +52,7 @@ p{
     height:27px;
     width:30px;
     margin-right:5px;
-    background-image: url('../../../resource/images/operate.png');
+    background-image: url('../../assets/images/operate.png');
     background-repeat:no-repeat;
 }
 .web{

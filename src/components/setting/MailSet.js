@@ -148,7 +148,7 @@ class MailSet extends React.Component {
                 obj.tls = "0"
             }
             arr.push(obj);
-            axios.get("../resource/datas/mailset.json",{
+            axios.get("./assets/datas/mailset.json",{
                 params:{
                     data:JSON.stringify(arr)
                 }
@@ -214,7 +214,7 @@ class MailSet extends React.Component {
                     anim: 4
                 }, function(index){
                 checkDatas.map((item)=>{
-                    axios.get("../resource/datas/mail1.json",{
+                    axios.get("./assets/datas/mail1.json",{
                         params:{
                             id:item
                         }
@@ -234,7 +234,7 @@ class MailSet extends React.Component {
 
     loadData(){
         let _this = this;
-        axios.get("../resource/datas/mailset.json").then(function(res){
+        axios.get("./assets/datas/mailset.json").then(function(res){
             console.log(res.data);
             $(".smtp-host").val(res.data[0].host);
             $(".smtp-port").val(res.data[0].port);
@@ -253,7 +253,7 @@ class MailSet extends React.Component {
         },function(){
             console.log("初始化失败")
         });
-        axios.get("../resource/datas/mail.json").then(function(res){
+        axios.get("./assets/datas/mail.json").then(function(res){
             $("#mail-container").html(`
                     <table className="layui-hide" id="mail-table" lay-filter="demo"></table>
                     <script type="text/html" id="barMail">
@@ -310,7 +310,7 @@ class MailSet extends React.Component {
                         anim: 4
                     }, function(index){
                         // obj.del();
-                        axios.get("../resource/datas/mail1.json",{
+                        axios.get("./assets/datas/mail1.json",{
                             params:{
                                 id:obj.data.id
                             }

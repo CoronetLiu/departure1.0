@@ -573,16 +573,16 @@ class MonitorModify extends React.Component {
         $(".updown").on("click",function(){
             if(this.parentNode.style.maxHeight == "40px"){
                 this.parentNode.style.maxHeight = "none";
-                this.style.backgroundImage = "url('../resource/images/up.png')"
+                this.style.backgroundImage = "url('./assets/images/up.png')"
             }else{
                 this.parentNode.style.maxHeight = "40px";
-                this.style.backgroundImage = "url('../resource/images/down.png')"
+                this.style.backgroundImage = "url('./assets/images/down.png')"
             }
         });
 
         //联系人点击事件
         $(".join-concat").on("click",function(evt){
-            axios.get("../resource/datas/concat.json").then(function(res){
+            axios.get("./assets/datas/concat.json").then(function(res){
                 // console.log(res.data)
                 let str0 = '';
                 res.data.map((item,index)=>{
@@ -715,7 +715,7 @@ class MonitorModify extends React.Component {
                                     }
                                     layer.close(index);
                                     //发送数据
-                                    axios.get("../resource/datas/concat.json",{
+                                    axios.get("./assets/datas/concat.json",{
                                         params:{
                                             name:$(".concat-name").val(),
                                             tel:$(".concat-tel").val(),
@@ -750,7 +750,7 @@ class MonitorModify extends React.Component {
 
         //点击业务系统事件
         $(".join-business-sys").on("click",function(){
-            axios.get("../resource/datas/businesssys.json").then(function(res){
+            axios.get("./assets/datas/businesssys.json").then(function(res){
                 // console.log(res.data)
                 let str0 = '';
                 res.data.map((item,index)=>{
@@ -856,7 +856,7 @@ class MonitorModify extends React.Component {
                                     }
                                     layer.close(index);
                                     //发送数据
-                                    axios.get("../resource/datas/businesssys.json",{
+                                    axios.get("./assets/datas/businesssys.json",{
                                         params:{
                                             name:$(".businesssys-name").val()
                                         }
@@ -890,7 +890,7 @@ class MonitorModify extends React.Component {
         //点击位置事件
         $("#monitor-modify").on("click",".join-position",function(evt){
             let that = this;
-            axios.get("../resource/datas/position.json").then(function(res){
+            axios.get("./assets/datas/position.json").then(function(res){
                 // console.log(res.data)
                 let str0 = '';
                 res.data.map((item,index)=>{
@@ -1131,7 +1131,7 @@ class MonitorModify extends React.Component {
                                     }
                                     layer.close(index);
                                     //发送数据
-                                    axios.get("../resource/datas/position.json",{
+                                    axios.get("./assets/datas/position.json",{
                                         params:{
                                             dataCenter:$(".position-dataCenter").val(),
                                             dataRoom:$(".position-dataRoom").val(),
@@ -1260,7 +1260,7 @@ class MonitorModify extends React.Component {
             }
             that.packData(); //包装数据
             console.log(arr0)
-            axios.get("../resource/datas/modify.json",{
+            axios.get("./assets/datas/modify.json",{
                 params:{
                     modifyMessage:JSON.stringify(arr0)
                 }
@@ -1382,7 +1382,7 @@ class MonitorModify extends React.Component {
 
     //回显数据
     showData(){
-        axios.get("../resource/datas/modify.json").then(function(res){
+        axios.get("./assets/datas/modify.json").then(function(res){
             console.log(res.data);
             let obj1 = res.data[0];
             let obj2 = res.data[1];
@@ -1426,7 +1426,7 @@ class MonitorModify extends React.Component {
             $(".join-end-date").val(obj2.endDate);
             $(".join-business-sys").attr("data-id",obj2.businessSys);
             if(obj2.businessSys){
-                axios.get("../resource/datas/businesssys.json").then(function(res){
+                axios.get("./assets/datas/businesssys.json").then(function(res){
                     res.data.map((item,index) => {
                         if(item.bussinessId == obj2.businessSys){
                             $(".join-business-sys").val(item.name)
@@ -1437,7 +1437,7 @@ class MonitorModify extends React.Component {
                 })
             }
             if(obj2.position.length){
-                axios.get("../resource/datas/position.json").then(function(res){
+                axios.get("./assets/datas/position.json").then(function(res){
                     res.data.map((item,index) => {
                         if(item.cabinetId == obj2.position[0].cabinetId){
                             let arr = [];
