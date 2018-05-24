@@ -851,7 +851,7 @@ class Monitor extends React.Component {
                         <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
                     </script>
                     <script type="text/html" id="devicename">
-                            <span style="display:block;padding-right:15px;background:url('../../assets/images/lookup.png') no-repeat right center;">{{ d.name }}</span>
+                            <span style="display:block;padding-right:15px;background:url('./assets/images/lookup.png') no-repeat right center;">{{ d.name }}</span>
                     </script>
                     <script type="text/html" id="warnstate">
                         {{#  if(d.warnstate === '正常'){ }}

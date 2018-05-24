@@ -755,10 +755,10 @@ class Join extends React.Component {
                 maxHeight:"40px"
             });
             $(".updown").css({
-                backgroundImage : "url('../../assets/images/down.png')"
+                backgroundImage : "url('./assets/images/down.png')"
             });
             $(".join-one .updown").css({
-                backgroundImage : "url('../../assets/images/up.png')"
+                backgroundImage : "url('./assets/images/up.png')"
             });
             $(".collect-port-container").html("")
         });
@@ -1252,10 +1252,10 @@ class Join extends React.Component {
                 maxHeight:"40px"
             });
             $(".updown").css({
-                backgroundImage : "url('../../assets/images/down.png')"
+                backgroundImage : "url('./assets/images/down.png')"
             });
             $(".join-one .updown").css({
-                backgroundImage : "url('../../assets/images/up.png')"
+                backgroundImage : "url('./assets/images/up.png')"
             });
             $(".collect-port-container").html("");
             OBJ2 = {}
@@ -1410,10 +1410,10 @@ class Join extends React.Component {
         $(".updown").on("click",function(){
             if(this.parentNode.style.maxHeight == "40px"){
                 this.parentNode.style.maxHeight = "none";
-                this.style.backgroundImage = "url('../../assets/images/up.png')"
+                this.style.backgroundImage = "url('./assets/images/up.png')"
             }else{
                 this.parentNode.style.maxHeight = "40px";
-                this.style.backgroundImage = "url('../../assets/images/down.png')"
+                this.style.backgroundImage = "url('./assets/images/down.png')"
             }
         });
 
