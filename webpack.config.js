@@ -37,7 +37,7 @@ module.exports = {
     devServer:{
         contentBase:"./dist", //服务器开启目录
         host:"localhost",
-        port:8000,
+        port:3000,
         historyApiFallback:true,  //是否使用H5里HISTORYapi
         proxy:{
             '/api':{
