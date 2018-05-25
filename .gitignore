@@ -2,12 +2,15 @@
 
 # dependencies
 /node_modules
+/venv
+/.idea
 
 # testing
 /coverage
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
