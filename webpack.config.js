@@ -113,7 +113,7 @@ module.exports = {
             {
                 test: /\.(jpe?g|png|gif|svg|ico)$/,
                 use: [{
-                    loader: 'file-loader?name=images/img_[hash:8].[ext]'
+                    loader: 'file-loader?name=images/img_[hash:3].[ext]'
                 }/*,{
                     loader:'image-webpack-loader?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 65}}'
                 }*/]
