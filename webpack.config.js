@@ -8,9 +8,9 @@ require("babel-polyfill");//兼容ie9 ++
 const HtmlWebpackPlugin = require("html-webpack-plugin"); //html 抽离插件
 const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin"); //sass-css 抽离插件
 const CopyWebpackPlugin = require('copy-webpack-plugin'); //resource转移
-
+const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 module.exports = {
-    devtool: 'eval-source-map',  //显示错误所在文件所在行
+    // devtool: 'eval-source-map',  //显示错误所在文件所在行
     performance: {
         hints: false  // 关闭hot更新导致文件过大提示
     },
@@ -60,6 +60,8 @@ module.exports = {
     },
     plugins:[  //插件配置
         // new webpack.NoEmitOnErrorsPlugin(), //错误不编译
+        // new OpenBrowserPlugin({ url: 'http://localhost:'+process.env.PORT.toString()}),
+        new OpenBrowserPlugin({ url: 'http://localhost:3000'}),
         new HtmlWebpackPlugin({  //抽离html
             // title: 'CoronetLiu', //标题
             favicon: './src/favicon.ico', //favicon路径
