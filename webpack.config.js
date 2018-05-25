@@ -10,7 +10,7 @@ const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin"); //sass-
 const CopyWebpackPlugin = require('copy-webpack-plugin'); //resource转移
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 module.exports = {
-    // devtool: 'eval-source-map',  //显示错误所在文件所在行
+    devtool: 'eval-source-map',  //显示错误所在文件所在行
     performance: {
         hints: false  // 关闭hot更新导致文件过大提示
     },
