@@ -67,7 +67,7 @@ module.exports = {
             favicon: './src/favicon.ico', //favicon路径
             template: './src/index.html', //html模板路径
             filename: 'index.html', //生成的html存放路径，相对于 path
-            inject: true, //允许插件修改哪些内容，包括head与body
+            inject: "body", //允许插件修改哪些内容，包括head与body
             minify: { //压缩HTML文件
                 removeComments: true, //移除HTML中的注释
                 collapseWhitespace: false //删除空白符与换行符
