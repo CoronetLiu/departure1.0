@@ -115,7 +115,7 @@ class Monitor extends React.Component {
                                 </button>
                                 <button className="layui-btn layui-btn-sm allon">启用</button>
                                 <button className="layui-btn layui-btn-sm alloff">暂停</button>
-                                <button className="layui-btn layui-btn-sm alldelete">删除</button>
+                                <button className="layui-btn layui-btn-sm layui-btn-danger alldelete">删除</button>
                             </div>
                         </div>
                         <div id="table-container"></div>
