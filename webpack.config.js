@@ -9,6 +9,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin"); //html 抽离插件
 const ExtractTextWebpackPlugin = require("extract-text-webpack-plugin"); //sass-css 抽离插件
 const CopyWebpackPlugin = require('copy-webpack-plugin'); //resource转移
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
+
 module.exports = {
     devtool: 'eval-source-map',  //显示错误所在文件所在行
     performance: {
