@@ -275,8 +275,6 @@ class Join extends React.Component {
                                             <button className="layui-btn layui-btn-danger prev-step3">放弃设置</button>
                                             <button className="layui-btn layui-btn-normal next-step3">设置完成</button>
                                         </div>
-
-
                                     </div>
                                     <div className="autofind-content" style={{display:"none"}}>
                                         <p>IPMI自动发现：</p>

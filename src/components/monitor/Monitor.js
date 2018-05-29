@@ -33,8 +33,8 @@ class Monitor extends React.Component {
                     <div id="monitor" ref="monitor">
                         <div className="btns">
                             <div>
-                            <button className="layui-btn layui-btn-sm adddevice-monitor">添加设备</button>
-                            <button className="layui-btn layui-btn-sm exportdevice-monitor">导出资源</button>
+                                <button className="layui-btn layui-btn-sm adddevice-monitor">添加设备</button>
+                                <button className="layui-btn layui-btn-sm exportdevice-monitor">导出资源</button>
                             </div>
                             <div className="search-monitor">
                                 查询条件：
