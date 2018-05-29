@@ -895,7 +895,7 @@ class Monitor extends React.Component {
                     {field: 'type', title: '型号', minWidth: 160,sort:true},
                     {field: 'temperature', title: '状态', width: 80, sort: true,templet: '#warnstate'},
                     {field: 'rate', title: '采集频率(分钟)', width: 130, edit: 'text',style:'text-align: center;'},
-                    {field: 'operate', title: '操作',fixed: 'right', width:500, align:'center', toolbar: '#barMonitor'}
+                    {field: 'operate', title: '操作',fixed: 'right', width:460, align:'center', toolbar: '#barMonitor'}
                 ]],
                 data: data,
                 // skin: 'line',//表格风格
@@ -957,7 +957,7 @@ class Monitor extends React.Component {
                                     {field: 'type', title: '型号', minWidth: 160,sort:true},
                                     {field: 'temperature', title: '状态', width: 80, sort: true,templet: '#warnstate'},
                                     {field: 'rate', title: '采集频率(分钟)', width: 130, edit: 'text',style:'text-align: center;'},
-                                    {field: 'operate', title: '操作',fixed: 'right', width:500, align:'center', toolbar: '#barMonitor'}
+                                    {field: 'operate', title: '操作',fixed: 'right', width:460, align:'center', toolbar: '#barMonitor'}
                                 ]],
                                 data: res.data,
                                 // skin: 'line',//表格风格
