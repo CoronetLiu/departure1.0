@@ -262,11 +262,11 @@ class User extends React.Component {
                 elem: '#user-table',
                 cols: [[ //标题栏
                     {type:'checkbox',fixed: 'left',width:40},
-                    {field: 'user', title: '登录名', sort:true, width: 153,style:"text-align:center;", toolbar: '#barId'},
-                    {field: 'name', title: '姓名', width: 140,style:"text-align:center;"},
-                    {field: 'tel', title: '电话', width: 160,style:"text-align:center;"},
-                    {field: 'email', title: '邮箱', width: 250,style:"text-align:center;"},
-                    {field: 'operate', title: '操作',fixed: 'right', width:200, align:'center', toolbar: '#barUser'}
+                    {field: 'user', title: '登录名', sort:true, minWidth: 100,style:"text-align:center;", toolbar: '#barId'},
+                    {field: 'name', title: '姓名', minWidth: 100,style:"text-align:center;"},
+                    {field: 'tel', title: '电话', minWidth: 100,style:"text-align:center;"},
+                    {field: 'email', title: '邮箱', minWidth: 200,style:"text-align:center;"},
+                    {field: 'operate', title: '操作',fixed: 'right', width:170, align:'center', toolbar: '#barUser'}
                 ]],
                 data: data,
                 // skin: 'line',//表格风格
@@ -321,11 +321,11 @@ class User extends React.Component {
                                 elem: '#user-table',
                                 cols: [[ //标题栏
                                     {type:'checkbox',fixed: 'left',width:40},
-                                    {field: 'user', title: '登录名', sort:true, width: 153,style:"text-align:center;",toolbar: '#barId'},
-                                    {field: 'name', title: '姓名', width: 140,style:"text-align:center;"},
-                                    {field: 'tel', title: '电话', width: 160,style:"text-align:center;"},
-                                    {field: 'email', title: '邮箱', width: 250,style:"text-align:center;"},
-                                    {field: 'operate', title: '操作',fixed: 'right', width:200, align:'center', toolbar: '#barUser'}
+                                    {field: 'user', title: '登录名', sort:true, minWidth: 100,style:"text-align:center;", toolbar: '#barId'},
+                                    {field: 'name', title: '姓名', minWidth: 100,style:"text-align:center;"},
+                                    {field: 'tel', title: '电话', minWidth: 100,style:"text-align:center;"},
+                                    {field: 'email', title: '邮箱', minWidth: 200,style:"text-align:center;"},
+                                    {field: 'operate', title: '操作',fixed: 'right', width:170, align:'center', toolbar: '#barUser'}
                                 ]],
                                 data: res.data,
                                 // skin: 'line',//表格风格
@@ -458,11 +458,11 @@ class User extends React.Component {
                                     elem: '#user-table',
                                     cols: [[ //标题栏
                                         {type:'checkbox',fixed: 'left',width:40},
-                                        {field: 'user', title: '登录名', sort:true, width: 153,style:"text-align:center;",toolbar: '#barId'},
-                                        {field: 'name', title: '姓名', width: 140,style:"text-align:center;"},
-                                        {field: 'tel', title: '电话', width: 160,style:"text-align:center;"},
-                                        {field: 'email', title: '邮箱', width: 250,style:"text-align:center;"},
-                                        {field: 'operate', title: '操作',fixed: 'right', width:200, align:'center', toolbar: '#barUser'}
+                                        {field: 'user', title: '登录名', sort:true, minWidth: 100,style:"text-align:center;", toolbar: '#barId'},
+                                        {field: 'name', title: '姓名', minWidth: 100,style:"text-align:center;"},
+                                        {field: 'tel', title: '电话', minWidth: 100,style:"text-align:center;"},
+                                        {field: 'email', title: '邮箱', minWidth: 200,style:"text-align:center;"},
+                                        {field: 'operate', title: '操作',fixed: 'right', width:170, align:'center', toolbar: '#barUser'}
                                     ]],
                                     data: res.data,
                                     // skin: 'line',//表格风格

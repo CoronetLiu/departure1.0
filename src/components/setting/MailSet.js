@@ -285,10 +285,10 @@ class MailSet extends React.Component {
                 elem: '#mail-table',
                 cols: [[ //标题栏
                     {type:'checkbox',fixed: 'left',width:40},
-                    {field: 'name', title: '规则名称', sort:true, width: 200,style:"text-align:center;",toolbar:"#barId"},
-                    {field: 'people', title: '告警收件人', width: 200,style:"text-align:center;"},
+                    {field: 'name', title: '规则名称', sort:true, width: 150,style:"text-align:center;",toolbar:"#barId"},
+                    {field: 'people', title: '告警收件人', width: 180,style:"text-align:center;"},
                     {field: 'title', title: '告警标题', width: 200,style:"text-align:center;"},
-                    {field: 'content', title: '告警内容', width: 200,style:"text-align:center;"},
+                    {field: 'content', title: '告警内容', width: 383,style:"text-align:center;"},
                     {field: 'operate', title: '操作',fixed: 'right', width:150, align:'center', toolbar: '#barMail'}
                 ]],
                 data: data,
@@ -321,10 +321,10 @@ class MailSet extends React.Component {
                                 elem: '#mail-table',
                                 cols: [[ //标题栏
                                     {type:'checkbox',fixed: 'left',width:40},
-                                    {field: 'name', title: '规则名称', sort:true, width: 200,style:"text-align:center;",toolbar:"#barId"},
-                                    {field: 'people', title: '告警收件人', width: 200,style:"text-align:center;"},
+                                    {field: 'name', title: '规则名称', sort:true, width: 150,style:"text-align:center;",toolbar:"#barId"},
+                                    {field: 'people', title: '告警收件人', width: 180,style:"text-align:center;"},
                                     {field: 'title', title: '告警标题', width: 200,style:"text-align:center;"},
-                                    {field: 'content', title: '告警内容', width: 200,style:"text-align:center;"},
+                                    {field: 'content', title: '告警内容', width: 383,style:"text-align:center;"},
                                     {field: 'operate', title: '操作',fixed: 'right', width:150, align:'center', toolbar: '#barMail'}
                                 ]],
                                 data: res.data,

@@ -32,8 +32,38 @@ class Monitor extends React.Component {
                 <div id="main-right">
                     <div id="monitor" ref="monitor">
                         <div className="btns">
+                            <div>
                             <button className="layui-btn layui-btn-sm adddevice-monitor">添加设备</button>
                             <button className="layui-btn layui-btn-sm exportdevice-monitor">导出资源</button>
+                            </div>
+                            <div className="search-monitor">
+                                查询条件：
+                                <div className="search1-container">
+                                    <input className="search1"  type="text" placeholder="设备类型" readOnly="readOnly"/>
+                                    <ul className="search1-list">
+                                        <li className="search1-li">服务器</li>
+                                        <li className="search1-li">存储</li>
+                                        <li className="search1-li">刀箱</li>
+                                        <li className="search1-li">网络设备</li>
+                                    </ul>
+                                </div>
+                                <div className="search2-container">
+                                    <input className="search2"  type="text" placeholder="告警类型" readOnly="readOnly"/>
+                                    <ul className="search2-list">
+                                        <li className="search2-li">异常</li>
+                                        <li className="search2-li">脱网</li>
+                                    </ul>
+                                </div>
+                                <div className="search3-container">
+                                    <input className="search3"  type="text" placeholder="任务状态" readOnly="readOnly"/>
+                                    <ul className="search3-list">
+                                        <li className="search3-li">启用</li>
+                                        <li className="search3-li">暂停</li>
+                                    </ul>
+                                </div>
+                                <input className="search4" type="text" placeholder="请输入关键字"/>
+                                <button className="layui-btn layui-btn-sm search">查询</button>
+                            </div>
                         </div>
                         <div className="btns">
                             <div className="change-dir">
@@ -70,34 +100,7 @@ class Monitor extends React.Component {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="search-monitor">
-                                查询条件：
-                                <div className="search1-container">
-                                    <input className="search1"  type="text" placeholder="设备类型" readOnly="readOnly"/>
-                                    <ul className="search1-list">
-                                        <li className="search1-li">服务器</li>
-                                        <li className="search1-li">存储</li>
-                                        <li className="search1-li">刀箱</li>
-                                        <li className="search1-li">网络设备</li>
-                                    </ul>
-                                </div>
-                                <div className="search2-container">
-                                    <input className="search2"  type="text" placeholder="告警类型" readOnly="readOnly"/>
-                                    <ul className="search2-list">
-                                        <li className="search2-li">异常</li>
-                                        <li className="search2-li">脱网</li>
-                                    </ul>
-                                </div>
-                                <div className="search3-container">
-                                    <input className="search3"  type="text" placeholder="任务状态" readOnly="readOnly"/>
-                                    <ul className="search3-list">
-                                        <li className="search3-li">启用</li>
-                                        <li className="search3-li">暂停</li>
-                                    </ul>
-                                </div>
-                                <input className="search4" type="text" placeholder="请输入关键字"/>
-                                <button className="layui-btn layui-btn-sm search">查询</button>
-                            </div>
+
                             <div className="demoTable">
                                 <button className="rate-btn">采集频率
                                     <span className="arrowA"></span>
