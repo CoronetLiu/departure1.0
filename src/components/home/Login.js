@@ -56,7 +56,7 @@ class Login extends React.Component {
         $("body").css({
             overflow:"auto"
         });
-        $("#root #app-all #warp").css({
+        $("#root, #app-all, #warp").css({
             overflow:"auto"
         });
         $(".login-submit").on("click",function(){

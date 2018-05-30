@@ -188,15 +188,14 @@ class Menu extends React.Component {
                 return false;
             }
         };
-
-         //login修改样式
+        //login修改样式
         $("html").css({
             overflow:"hidden"
         });
         $("body").css({
             overflow:"hidden"
         });
-        $("#root #app-all #warp").css({
+        $("#root, #app-all, #warp").css({
             overflow:"hidden"
         });
         //room修改样式
