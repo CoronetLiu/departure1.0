@@ -30,7 +30,7 @@ class Home extends React.Component {
                 <Menu content1="概览"/>
                 <div id="main-right">
                     <div id="home">
-                        HOME
+                        <img src="./assets/images/down.png" alt="图片" title="down.png"/>HOME
                     </div>
                 </div>
             </div>

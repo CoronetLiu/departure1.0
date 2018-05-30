@@ -50,6 +50,15 @@ class Login extends React.Component {
     }
 
     componentDidMount(){
+        $("html").css({
+            overflow:"auto"
+        });
+        $("body").css({
+            overflow:"auto"
+        });
+        $("#root #app-all #warp").css({
+            overflow:"auto"
+        });
         $(".login-submit").on("click",function(){
             axios.get("./assets/datas/users.json",{
                 params:{
