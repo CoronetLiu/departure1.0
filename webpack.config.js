@@ -54,7 +54,7 @@ module.exports = {
             },
             '/serverURL':{
                 target:'http://192.168.182.212:59609/obm',
-                changeOrigin: false,
+                changeOrigin: true,
                 // secure:false, // https 时启用
                 pathRewrite:{
                     '^/serverURL':'/'
