@@ -1,9 +1,5 @@
 /*
-* @Author:  CoronetLiu
-* @Date:    2018-04-26 15:13:15
-* @Last Modified by:    CoronetLiu
-* @Last Modified time:  2018-05-03 16:55:06
-* @Email:   liu86931@163.com
+* Author: CoronetLiu   2018/4/26
 */
 
 // 'use strict';

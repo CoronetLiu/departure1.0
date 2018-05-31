@@ -1,3 +1,6 @@
+/*
+* Author: CoronetLiu   2018/4/3
+*/
 
 const webpack = require("webpack");
 const path = require('path');
