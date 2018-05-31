@@ -50,6 +50,7 @@
                     width:120px;
                     height:30px;
                     text-align:right;
+                    vertical-align: middle;
                 }
                 .step2-content{
                     position:relative;
@@ -57,9 +58,11 @@
                         padding-left:50px;
                     }
                     label{
-                        margin-left:110px;
+                        //margin-left:110px;
                         padding-left:0;
                         width:380px;
+                        margin:0 auto;
+                        margin-top:20px;
                     }
                     input{
                         width:250px;
@@ -71,7 +74,7 @@
                     }
                     .join-zero{
                         border:1px solid #ec8c28;
-                        width:70%;
+                        width:80%;
                         margin:0 auto;
                         margin-bottom:20px;
                         position:relative;
@@ -106,9 +109,11 @@
                         padding-left:50px;
                     }
                     label{
-                        margin-left:110px;
+                        //margin-left:110px;
                         padding-left:0;
                         width:380px;
+                        margin:0 auto;
+                        margin-top:20px;
                     }
                     input{
                         width:250px;
@@ -133,7 +138,7 @@
                     }
                     .join-one,.join-two,.join-three,.join-four,.join-five{
                         border:1px solid #ec8c28;
-                        width:70%;
+                        width:80%;
                         margin:0 auto;
                         margin-bottom:20px;
                         position:relative;
@@ -177,6 +182,7 @@
                                 border:1px solid #ccc;
                                 background:#8ceeee;
                                 cursor:pointer;
+                                vertical-align: middle;
                             }
                             .join-delete-commands{
                                 background:#fd6f6f;
@@ -251,6 +257,7 @@
                                 border:1px solid #ccc;
                                 background:#8ceeee;
                                 cursor:pointer;
+                                vertical-align: middle;
                             }
                             .join-delete-manageIP2s{
                                 background:#fd6f6f;
@@ -278,6 +285,7 @@
                                 border:1px solid #ccc;
                                 background:#8ceeee;
                                 cursor:pointer;
+                                vertical-align: middle;
                             }
                             .join-delete-Us{
                                 background:#fd6f6f;
@@ -368,6 +376,7 @@
                                 border:1px solid #ccc;
                                 background:#8ceeee;
                                 cursor:pointer;
+                                vertical-align: middle;
                             }
                             .join-delete-transferports{
                                 background:#fd6f6f;
@@ -380,6 +389,7 @@
                         }
                         .fast-collect-div{
                             display:inline-block;
+                            width:120px;
                         }
                         .if-fast-list,.fast-collect-list{
                             display:none;
@@ -402,16 +412,20 @@
                         }
                         .fast-collect-list{
                             left:0px;
+                            width:120px;
                         }
                         .join-fasts{
-                            width:630px;
+                            width:100%;
                             margin-left:0;
                             margin-bottom:30px;
                             input{
-                                width:150px;
+                                width:25%;
                             }
                             .front-name{
                                 width:100px;
+                            }
+                            .join-fast-collect{
+                                width:100%;
                             }
                             .join-fast-name{
                                 margin:0 15px;
@@ -429,6 +443,7 @@
                                 border:1px solid #ccc;
                                 background:#8ceeee;
                                 cursor:pointer;
+                                vertical-align: middle;
                             }
                             .join-delete-fasts{
                                 background:#fd6f6f;
@@ -436,9 +451,6 @@
                             .join-arrow{
                                 right:10px;
                             }
-                        }
-                        .fast-collect-list{
-                            width:150px;
                         }
                     }//5
                     .modify-save{
