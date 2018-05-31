@@ -166,7 +166,7 @@ class Menu extends React.Component {
     }
 
     //loading动画
-    animate(){console.log(1)
+    animate(){
         let _this = this;
         //请求拦截器     设置loading动画显示
         axios.interceptors.request.use(function(config){
