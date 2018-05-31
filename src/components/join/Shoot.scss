@@ -13,7 +13,6 @@
   margin-left:20px;
 }
 #container-c{
-  // float:right;
   position:absolute;
   z-index: 1;
   right:-490px;
@@ -36,11 +35,10 @@
 #moveDiv{
   z-index:610;
   cursor:move;
-  // border:1px solid #00f;
   opacity:0.7;
 }
 label{
-  margin-left:10px;
+  //margin-left:10px;
   display:inline-block;
   width:90px;
 }
@@ -52,7 +50,7 @@ select,input{
 }
 #lab-factory{
   width:140px;
-  margin-left:20px;
+  //margin-left:20px;
 }
 #lab-type{
   width:200px;
@@ -102,13 +100,12 @@ select,input{
   margin-left:5px;
 }
 #confirm-c,#clear-c,#back-c{
-  margin-left:30px;
+  //margin-left:30px;
   height:30px;
   width:80px;
 }
 #box-c{
   float:left;
-  // border:1px solid #f0f;
   text-align:center !important;
   margin:10px 0 20px 20px;
 }
@@ -122,7 +119,7 @@ select,input{
     text-align:center;
     text-decoration:none;
     border-radius:10px;
-    margin-left:60px;
+    //margin-left:60px;
     cursor:pointer;
 }
 #myCanvas-cc{
@@ -156,7 +153,6 @@ select,input{
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  // padding-left: 10px;
 }
 #factory{
   border: none;
@@ -166,7 +162,6 @@ select,input{
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  // padding-left: 10px;
 }
 
 }//shoot
