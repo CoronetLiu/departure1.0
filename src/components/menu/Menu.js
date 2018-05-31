@@ -22,41 +22,6 @@ class Menu extends React.Component {
         }
     }
 
-    //loading动画
-    animate(){console.log(1)
-        let _this = this;
-        //请求拦截器     设置loading动画显示
-        axios.interceptors.request.use(function(config){
-            layui.use('layer', function() {
-                var layer = layui.layer;
-                _this.state.loading = layer.load(1, {
-                    shade: [0.3, '#000'] //0.1透明度的白色背景
-                });
-            });
-            return config;
-        },function(error){    //当出现请求错误是做一些事
-            return Promise.reject(error);
-        });
-        //返回拦截器     把loading动画关掉
-        axios.interceptors.response.use(function(response){
-            layui.use('layer', function() {
-                var layer = layui.layer;
-                layer.close(_this.state.loading);
-            });
-            return response;
-        },function(error){
-            //对返回的错误进行一些处理
-            return Promise.reject(error);
-        });
-    }
-
-    //提供修改显示维度方法
-    changeDimension(cont3){
-        this.setState({
-            content3:cont3
-        })
-    }
-
     componentWillMount(){
         //判断登录状态
         if(!$.cookie("ObmUser")){
@@ -198,6 +163,41 @@ class Menu extends React.Component {
                 </ul>
             </div>
         );
+    }
+
+    //loading动画
+    animate(){console.log(1)
+        let _this = this;
+        //请求拦截器     设置loading动画显示
+        axios.interceptors.request.use(function(config){
+            layui.use('layer', function() {
+                var layer = layui.layer;
+                _this.state.loading = layer.load(1, {
+                    shade: [0.3, '#000'] //0.1透明度的白色背景
+                });
+            });
+            return config;
+        },function(error){    //当出现请求错误是做一些事
+            return Promise.reject(error);
+        });
+        //返回拦截器     把loading动画关掉
+        axios.interceptors.response.use(function(response){
+            layui.use('layer', function() {
+                var layer = layui.layer;
+                layer.close(_this.state.loading);
+            });
+            return response;
+        },function(error){
+            //对返回的错误进行一些处理
+            return Promise.reject(error);
+        });
+    }
+
+    //提供修改显示维度方法
+    changeDimension(cont3){
+        this.setState({
+            content3:cont3
+        })
     }
 
     componentDidMount(){
