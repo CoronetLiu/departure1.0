@@ -12,8 +12,8 @@ import {Link,hashHistory,browserHistory} from "react-router";
 
 
 class Monitor extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor(props,context) {
+        super(props,context);
         this.state = {
             $rateObj:{},
             rateSingle:0 //修改单个采集频率需要

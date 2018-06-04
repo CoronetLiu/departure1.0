@@ -16,8 +16,8 @@ let flag2 = [false,false,false,false,false,false]; //第二步验证需要
 let autofindflag = [false,false,false,false,false,false]; //autofind验证需要
 
 class Join extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor(props,context) {
+        super(props,context);
         this.state = {
 
         }

@@ -11,8 +11,8 @@ import {Link,hashHistory,browserHistory} from "react-router";
 
 
 class MailSet extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor(props,context) {
+        super(props,context);
         this.state = {
 
         }

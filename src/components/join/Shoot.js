@@ -34,8 +34,8 @@ let serverURL = '/serverURL';
 
 
 class Combine extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor(props,context) {
+        super(props,context);
         this.state = {
             currentObj:{}, //当前所要画的图片
             x:0,           //记录所画图片的位置X

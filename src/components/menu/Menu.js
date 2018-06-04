@@ -11,8 +11,8 @@ import {Link,hashHistory,browserHistory} from "react-router";
 
 
 class Menu extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor(props,context) {
+        super(props,context);
         this.state = {
             menuWidth:"short",
             content1:props.content1 || "",

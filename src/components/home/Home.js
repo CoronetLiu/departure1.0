@@ -10,10 +10,9 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 import {Link,hashHistory,browserHistory} from "react-router";
 
-
 class Home extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor(props,context) {
+        super(props,context);
         this.state = {
 
         }
@@ -47,7 +46,7 @@ class Home extends React.Component {
                         layer.close(index)
                     }
                 });
-            })
+            });
             return (<div></div>);
         }else{
 

@@ -16,8 +16,8 @@ let OBJ1 = {}; //数据一
 let OBJ2 = {}; //数据二
 
 class MonitorModify extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor(props,context) {
+        super(props,context);
         this.state = {
             manageIP:this.props.location.query.manageIP
         }
