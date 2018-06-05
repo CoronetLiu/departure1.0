@@ -78,7 +78,7 @@ module.exports = {
             }
         }),
         new ExtractTextWebpackPlugin({  //抽离文本
-            filename:"[name].css",
+            filename:"[name]_[chunkHash:3].css",
             allChunks:true
         }),
         new webpack.optimize.CommonsChunkPlugin({ //单独打包
