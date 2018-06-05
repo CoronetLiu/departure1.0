@@ -2,6 +2,8 @@
 * Author: CoronetLiu   2018/4/17
 */
 
+@import "../../styles/color.scss";
+
 #monitor-modify{
     // height:100%;
     // overflow:hidden;
@@ -24,7 +26,7 @@
                     display:inline-block;
                     padding:0 10px;
                     border-radius:5px;
-                    background:#5fb6f7;
+                    background:$midColor;
                 }
             }
             .join-body-bottom{

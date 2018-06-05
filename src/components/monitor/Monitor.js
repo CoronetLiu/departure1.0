@@ -98,7 +98,7 @@ class Monitor extends React.Component {
                             </div>
 
                             <div className="demoTable">
-                                <button className="rate-btn">采集频率
+                                <button className="rate-btn layui-btn">采集频率
                                     <span className="arrowA"></span>
                                     <ul className="rate-list" style={{display:"none"}}>
                                         <li className="rate-li">10</li>
@@ -202,7 +202,7 @@ class Monitor extends React.Component {
 
         //采集频率按钮事件
         document.onclick = function(event){
-            if(event.target.className == "rate-btn" || event.target.className == "arrowA"){
+            if(event.target.className.indexOf("rate-btn") != -1 || event.target.className == "arrowA"){
                 if($(".rate-list")[0].style.display == "none"){
                     $(".rate-list")[0].style.display = "block"
                 }else{

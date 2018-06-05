@@ -2,6 +2,8 @@
 * Author: CoronetLiu   2018/4/3
 */
 
+@import "../../styles/color.scss";
+
 #menu::-webkit-scrollbar{
     width:0px;
     height:0px;
@@ -102,11 +104,11 @@
     display:inline-block;
     width:0px;
     height:40px;
-    background:#009688;
+    background:$deepColor;
     transition:all 0.1s;
 }
 #menu-list .active-hover{
-    background:#5FB878;
+    background:$midColor;
 }
 #menu-list>li>a{
     display:none;
@@ -139,7 +141,7 @@
     top:0px;
     z-index:11;
     width:100%;
-    background:#2F9688;
+    background:$deepColor;
     li{
         float:right;
         height:40px;

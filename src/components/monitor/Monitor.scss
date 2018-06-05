@@ -2,6 +2,8 @@
 * Author: CoronetLiu   2018/4/11
 */
 
+@import "../../styles/color.scss";
+
 #monitor{
     height:100%;
     position:relative;
@@ -10,8 +12,9 @@
         position:relative;
         width:80px;
         height:30px;
+        padding-left:5px;
         padding-right:10px;
-        background:#009688;
+        //background:$deepColor;
         color:#fff;
         border:none;
         border-radius: 2px;
@@ -50,6 +53,9 @@
                 color:#000;
             }
         }
+    }
+    .rate-btn:hover{
+        opacity:1;
     }
     table{
         // text-align:center;

@@ -2,6 +2,8 @@
 * Author: CoronetLiu   2018/4/18
 */
 
+@import "../../styles/color.scss";
+
 #join{
     // height:100%;
     // overflow:hidden;
@@ -15,12 +17,12 @@
             display:flex;
             justify-content:space-between;
             height:45px;
-            background:#d3e6db;
+            background:$lightColor;
             padding:5px 10px 0 10px;
             .join-title{
                 font-size:16px;
                 line-height:40px;
-                color:#088877;
+                color:$deepColor;
                 cursor:pointer;
             }
         }

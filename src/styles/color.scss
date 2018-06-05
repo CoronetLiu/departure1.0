@@ -2,6 +2,22 @@
 * Author: CoronetLiu   2018/4/3
 */
 
+//默认风格
 $deepColor:#009688;
-$midColor:#2F9688;
+$midColor:#5FB878;
 $lightColor:#d3e6db;
+
+
+.layui-btn{
+    background: $deepColor;
+}
+.layui-btn-normal{
+    background: #1E9FFF;
+}
+.layui-btn-danger{
+    background: #FF5722;
+}
+
+.layui-laypage .layui-laypage-curr .layui-laypage-em{
+    background: $deepColor;
+}
