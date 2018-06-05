@@ -20,6 +20,8 @@ import Warn from './components/warn/Warn.js';
 import DimensionMan from './components/setting/DimensionMan.js';
 import MailSet from './components/setting/MailSet.js';
 
+import './util/axiosUtil.js'  //axios 拦截器
+
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
