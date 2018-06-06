@@ -59,7 +59,7 @@ class MonitorModify extends React.Component {
                                             <div className="updown"></div>
                                             <p>采集配置</p>
                                             <label className="collect-type-label"><span className="front-name"><span className="nece"></span>采集方式：</span>
-                                                <input type="text" className="collect-type" placeholder="点击选择采集方式"/>
+                                                <input type="text" className="collect-type" placeholder="点击选择采集方式" readOnly/>
                                             </label>
                                             <div className="collect-port-container" style={{overflow:"hidden"}}></div>
                                             <label className="join-factory-label"><span className="front-name"><span className="nece"></span>厂商：</span>
@@ -125,10 +125,10 @@ class MonitorModify extends React.Component {
                                                 <input type="text" className="join-end-date" placeholder="选择保修截止日期"/>
                                             </label>
                                             <label><span className="front-name">业务系统：</span>
-                                                <input type="text" className="join-business-sys" placeholder="选择或新增业务系统"/>
+                                                <input type="text" className="join-business-sys" placeholder="选择或新增业务系统" readOnly/>
                                             </label>
                                             <label className="join-Us"><span className="front-name">位置：</span>
-                                                <input type="text" className="join-position" data-id="" placeholder="点击添加位置信息"/>
+                                                <input type="text" className="join-position" data-id="" placeholder="点击添加位置信息" readOnly/>
                                                 <span className="join-add-Us">+</span>
                                                 <div style={{marginTop:"20px"}}>
                                                     <span className="front-name">U位：</span>
@@ -137,7 +137,7 @@ class MonitorModify extends React.Component {
                                                 </div>
                                             </label>
                                             <label className="if-manage-label"><span className="front-name">可管理：</span>
-                                                <input type="text" className="join-if-manage" placeholder="选择是否可管理"/>
+                                                <input type="text" className="join-if-manage" placeholder="选择是否可管理" readOnly/>
                                                 <ul className="if-manage-list">
                                                     <li className="if-manage-li">是</li>
                                                     <li className="if-manage-li">否</li>
@@ -149,7 +149,7 @@ class MonitorModify extends React.Component {
                                             <div className="updown"></div>
                                             <p>远程桌面配置</p>
                                             <label className="if-desk-label"><span className="front-name">是否启用：</span>
-                                                <input type="text" className="join-if-desk" placeholder="请选择是否启用"/>
+                                                <input type="text" className="join-if-desk" placeholder="请选择是否启用" readOnly/>
                                                 <ul className="if-desk-list">
                                                     <li className="if-desk-li">是</li>
                                                     <li className="if-desk-li">否</li>
@@ -160,7 +160,7 @@ class MonitorModify extends React.Component {
                                                 <input type="text" className="KVM-port" placeholder="请输入远程桌面调用端口（443）"/>
                                             </label>
                                             <label className="desk-collector-label"><span className="front-name">采集机：</span>
-                                                <input type="text" className="desk-collector" placeholder="请选择采集机"/>
+                                                <input type="text" className="desk-collector" placeholder="请选择采集机" readOnly/>
                                                 <ul className="desk-collector-list">
                                                     <li className="desk-collector-li">192.168.0.1</li>
                                                     <li className="desk-collector-li">192.168.0.2</li>
@@ -175,7 +175,7 @@ class MonitorModify extends React.Component {
                                             <div className="updown"></div>
                                             <p>远程WEB配置</p>
                                             <label className="if-web-label"><span className="front-name">是否启用：</span>
-                                                <input type="text" className="join-if-web" placeholder="请选择是否启用"/>
+                                                <input type="text" className="join-if-web" placeholder="请选择是否启用" readOnly/>
                                                 <ul className="if-web-list">
                                                     <li className="if-web-li">是</li>
                                                     <li className="if-web-li">否</li>
@@ -183,7 +183,7 @@ class MonitorModify extends React.Component {
                                                 <a className="join-arrow"></a>
                                             </label>
                                             <label className="web-collector-label"><span className="front-name">采集机：</span>
-                                                <input type="text" className="web-collector" placeholder="请选择采集机"/>
+                                                <input type="text" className="web-collector" placeholder="请选择采集机" readOnly/>
                                                 <ul className="web-collector-list">
                                                     <li className="web-collector-li">192.168.0.1</li>
                                                     <li className="web-collector-li">192.168.0.2</li>
@@ -209,7 +209,7 @@ class MonitorModify extends React.Component {
                                             <div className="updown"></div>
                                             <p>快捷指令配置</p>
                                             <label className="if-fast-label"><span className="front-name">是否启用：</span>
-                                                <input type="text" className="join-if-fast" placeholder="请选择是否启用"/>
+                                                <input type="text" className="join-if-fast" placeholder="请选择是否启用" readOnly/>
                                                 <ul className="if-fast-list">
                                                     <li className="if-fast-li">是</li>
                                                     <li className="if-fast-li">否</li>
@@ -217,7 +217,7 @@ class MonitorModify extends React.Component {
                                                 <a className="join-arrow"></a>
                                             </label>
                                             <label className="join-fasts"><span className="front-name">指令：</span>
-                                                <div className="fast-collect-div"><input type="text" className="join-fast-collect" placeholder="采集方式"/>
+                                                <div className="fast-collect-div"><input type="text" className="join-fast-collect" placeholder="采集方式" readOnly/>
                                                     <ul className="fast-collect-list">
                                                         <li className="fast-collect-li">IPMI</li>
                                                     </ul>

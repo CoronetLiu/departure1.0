@@ -9,15 +9,15 @@
     // overflow:hidden;
     padding:20px 0;
     #join-container{
-        width:90%;
+        width:93%;
         margin:0px auto;
         border:1px solid #ccc;
         background:#f5f5f5;
         .join-body{
             min-height:430px;
-            width:90%;
+            width:100%;
             margin:0 auto;
-            padding:20px 30px 30px 30px;
+            padding:20px 0 30px 0;
             .join-body-top{
                 margin-bottom:20px;
                 p{
@@ -27,6 +27,7 @@
                     padding:0 10px;
                     border-radius:5px;
                     background:$midColor;
+                    margin-left: 30px;
                 }
             }
             .join-body-bottom{
@@ -76,7 +77,7 @@
                     }
                     .join-zero{
                         border:1px solid #ec8c28;
-                        width:80%;
+                        width:70%;
                         margin:0 auto;
                         margin-bottom:20px;
                         position:relative;
@@ -140,7 +141,7 @@
                     }
                     .join-one,.join-two,.join-three,.join-four,.join-five{
                         border:1px solid #ec8c28;
-                        width:80%;
+                        width:70%;
                         margin:0 auto;
                         margin-bottom:20px;
                         position:relative;
