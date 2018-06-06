@@ -77,7 +77,7 @@
                     display:block;
                     height:30px;
                     line-height:30px;
-                    padding-left:300px;
+                    padding-left:250px;
                     margin-top:20px;
                 }
                 input{
@@ -91,8 +91,10 @@
                     vertical-align: middle;
                 }
                 .step1-content{
+                    width:80%;
+                    margin:0 auto;
                     button{
-                        margin-left:600px;
+                        margin-left:420px;
                         margin-top:20px;
                     }
                     label{
@@ -113,6 +115,8 @@
                 }//step1
                 .step2-content{
                     position:relative;
+                    width:85%;
+                    margin:0 auto;
                     label{
                         margin-left:220px;
                         padding-left:0;
@@ -140,7 +144,7 @@
                             border-width: 8px;
                     }
                     .prev-step2{
-                        margin-left:590px;
+                        margin-left:570px;
                     }
                     .save-step2{
                         margin-left:30px;
@@ -148,7 +152,7 @@
                     .higher-setting{
                         position:absolute;
                         bottom:10px;
-                        left:450px;
+                        left:360px;
                         color:blue;
                         font-size:15px;
                     }
