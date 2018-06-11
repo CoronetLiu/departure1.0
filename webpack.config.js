@@ -41,7 +41,7 @@ module.exports = {
     devServer:{
         contentBase:"./dist", //服务器开启目录
         host:"localhost",
-        port:3000,
+        port:8000,
         historyApiFallback:true,  //是否使用H5里HISTORYapi
         proxy:{
             '/api':{
@@ -65,7 +65,7 @@ module.exports = {
     plugins:[  //插件配置
         // new webpack.NoEmitOnErrorsPlugin(), //错误不编译
         // new OpenBrowserPlugin({ url: 'http://localhost:'+process.env.PORT.toString()}),
-        new OpenBrowserPlugin({ url: 'http://localhost:3000'}),
+        new OpenBrowserPlugin({ url: 'http://localhost:8000'}),
         new HtmlWebpackPlugin({  //抽离html
             // title: 'CoronetLiu', //标题
             favicon: './src/favicon.ico', //favicon路径
