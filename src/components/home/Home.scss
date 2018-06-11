@@ -5,6 +5,229 @@
 @import '../../styles/color.scss';
 
 #home{
-    color:$deepColor;
-    background:url("../../assets/images/body_bj.png");
+    //color:$deepColor;
+    height:100%;
+    background:#101733;
+    div,p,span{
+        box-sizing:border-box;
+    }
+
+    #view{
+        height:100%;
+        display:flex;
+    }
+    #view-left,#view-center,#view-right{
+        height:100%;
+        width:33%;
+    }
+    .lt-title{
+        height:40px;
+        width:90%;
+        margin:0 auto;
+        margin-top:20px;
+        margin-bottom:10px;
+        background:#162951;
+        color:#41c6f3;
+        line-height:30px;
+        text-align:center;
+        font-size:16px;
+        border-radius:3px;
+        border:5px solid #2a6cc0;
+        border-image:url('../../assets/images/title-border.png') 5 5 stretch;
+    }
+    .lt-content{
+        width:90%;
+        margin:0 auto;
+        display:flex;
+        background:#142144;
+        border-radius:3px;
+        border:3px solid #2a6cc0;
+        border-image:url('../../assets/images/content-border.png') 3 3 stretch;
+    }
+    .lt-content div{
+        width:33%;
+        height:114px;
+        color:#fff;
+        text-align:center;
+        line-height:190px;
+    }
+    .lt-content div:nth-child(1){
+        background: url('../../assets/images/normal.png') center 10px no-repeat;
+    }
+    .lt-content div:nth-child(2){
+        background: url('../../assets/images/abnormal.png') center 10px no-repeat;
+    }
+    .lt-content div:nth-child(3){
+        background: url('../../assets/images/offnet.png') center 10px no-repeat;
+    }
+    .lb-title{
+        height:40px;
+        width:90%;
+        display:flex;
+        justify-content:space-between;
+        margin:0 auto;
+        margin-top:20px;
+        margin-bottom:10px;
+        color:#41c6f3;
+        line-height:30px;
+        text-align:center;
+        font-size:16px;
+    }
+    .lb-title div{
+        width:48%;
+        background:#162951;
+        border:5px solid #2a6cc0;
+        border-image:url('../../assets/images/title-border.png') 5 5 stretch;
+    }
+    .lb-content{
+        height:210px;
+        width:90%;
+        margin:0 auto;
+        background:#142144;
+        border-radius:3px;
+        border:3px solid #2a6cc0;
+        border-image:url('../../assets/images/content-border.png') 3 3 stretch;
+        display: flex;
+        justify-content: space-around;
+    }
+    .able-u,.able-p{
+        display:inline-block;
+        width:120px;
+        height:120px;
+        border-radius:50%;
+        margin-top: 30px;
+        color:#fff;
+    }
+    .able-u{
+         background: -webkit-linear-gradient(135deg, #0ceeea,#585ddb, #9d08e8); /* Safari 5.1 - 6.0 */
+         background: -o-linear-gradient(135deg, #0ceeea,#585ddb, #9d08e8); /* Opera 11.1 - 12.0 */
+         background: -moz-linear-gradient(135deg, #0ceeea,#585ddb, #9d08e8); /* Firefox 3.6 - 15 */
+         background: linear-gradient(135deg, #0ceeea,#585ddb, #9d08e8); /* 标准的语法 */
+    }
+    .able-u p,.able-p p{
+        text-align:center;
+        margin-top:25px;
+    }
+    .able-u span,.able-p span{
+        display:block;
+        text-align:center;
+        margin-top:10px;
+        font-size:26px;
+    }
+    .able-p{
+        background:#5b2444;
+    }
+    .ct-title{
+        height:40px;
+        margin:0 auto;
+        margin-top:20px;
+        margin-bottom:10px;
+        background:#162951;
+        color:#41c6f3;
+        line-height:30px;
+        text-align:center;
+        font-size:16px;
+        border:5px solid #2a6cc0;
+        border-image:url('../../assets/images/title-border.png') 5 5 stretch;
+    }
+    .ct-content{
+        height:400px;
+        margin:0 auto;
+        background:#142144;
+        border:3px solid #2a6cc0;
+        border-image:url('../../assets/images/content-border.png') 3 3 stretch;
+    }
+    #ct-chart{
+        height:100%;
+        width:100%;
+    }
+    .rt-title{
+        height:40px;
+        width:90%;
+        margin:0 auto;
+        margin-top:20px;
+        margin-bottom:10px;
+        background:#162951;
+        color:#41c6f3;
+        line-height:30px;
+        text-align:center;
+        font-size:16px;
+        border:5px solid #2a6cc0;
+        border-image:url('../../assets/images/title-border.png') 5 5 stretch;
+    }
+    .rt-content{
+        width:90%;
+        height:100px;
+        margin:0 auto;
+        display:flex;
+        background:#142144;
+        border-radius:3px;
+        border:1px solid #2a6cc0;
+    }
+    .rt-content  div{
+        height:60px;
+        width:90%;
+        margin:0 auto;
+        margin-top:20px;
+        border:1px solid #01aefa;
+        border-radius:50px;
+        text-align:center;
+        color:#47ddff;
+        line-height:60px;
+        font-size:30px;
+        background: -webkit-linear-gradient(180deg, #1c3e86,#0e1e40); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(180deg, #1c3e86,#0e1e40); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(180deg, #1c3e86,#0e1e40); /* Firefox 3.6 - 15 */
+        background: linear-gradient(180deg, #1c3e86,#0e1e40); /* 标准的语法 */
+    }
+    .rb-title{
+        height:40px;
+        width:90%;
+        margin:0 auto;
+        margin-top:20px;
+        margin-bottom:10px;
+        background:#162951;
+        color:#41c6f3;
+        line-height:30px;
+        text-align:center;
+        font-size:16px;
+        border-radius:3px;
+        border:5px solid #2a6cc0;
+        border-image:url('../../assets/images/title-border.png') 5 5 stretch;
+    }
+    .rb-content{
+        width:90%;
+        height:230px;
+        margin:0 auto;
+        background:#121d3d;
+        border-radius:3px;
+        border:1px solid #2a6cc0;
+        color:#1975e2;
+        display:flex;
+        -moz-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap:warp;
+    }
+    .rb-content dl{
+        width:33%;
+        height:100px;
+    }
+    .rb-content dl dt{
+        height:60px;
+        width:100%;
+    }
+    .rb-content dl dt img{
+        display: block;
+        margin:5px auto;
+    }
+    .rb-content dl dd{
+        height:40px;
+    }
+    .rb-content dl dd p{
+        text-align: center;
+    }
+
+
+
 }
