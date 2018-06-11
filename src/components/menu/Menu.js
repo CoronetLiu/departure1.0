@@ -56,6 +56,7 @@ class Menu extends React.Component {
         // console.log("render")
         return (
             <div id="menu" className="menu" ref="menu">
+                <div className="owner">CLiu❤</div>
                 <div id="menu-title"></div>
                 <ul id="menu-list" ref="menu_list">
                     <li><Link to="/login">概览</Link>
