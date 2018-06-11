@@ -49,7 +49,6 @@ class Home extends React.Component {
             });
             return (<div></div>);
         }else{
-
             return (
                 <div id="warp">
                     <Menu content1="概览"/>
@@ -84,7 +83,6 @@ class Home extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-
                                 <div id="view-center">
                                     <div className="ct-title">
                                         各厂家故障率占比
@@ -93,7 +91,6 @@ class Home extends React.Component {
                                         <div id="ct-chart"></div>
                                     </div>
                                 </div>
-
                                 <div id="view-right">
                                     <div className="rt-title">
                                         总耗电量
@@ -149,7 +146,6 @@ class Home extends React.Component {
                                         </dl>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
