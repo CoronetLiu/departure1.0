@@ -59,7 +59,7 @@ class Menu extends React.Component {
                 <div className="owner">CLiu❤</div>
                 <div id="menu-title"></div>
                 <ul id="menu-list" ref="menu_list">
-                    <li><Link to="/login">概览</Link>
+                    <li><Link to="/home">概览</Link>
                         <span className="nav-bar"></span>
                     </li>
                     <li><a className="spread">接入</a>
