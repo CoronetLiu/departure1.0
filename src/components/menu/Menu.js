@@ -178,7 +178,7 @@ class Menu extends React.Component {
         //禁用ie/backspace回退功能
         document.onkeydown = function(event) {
             if (event.keyCode == 8) {
-                if (document.activeElement.type == "text") {
+                if (document.activeElement.type == "text" || document.activeElement.type == "password") {
                     if (document.activeElement.readOnly == false)
                         return true;
                 }
